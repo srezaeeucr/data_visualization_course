@@ -1,0 +1,501 @@
+﻿Row No,Order Code,Order Date,Ship Date,Delivery Mode,Client ID,Client Name,Category Type,Country,City,State/Province,Postal Code,Region,Item Code,Product Category,Product Type,Product Title,Sale Price,Units Sold,Discount Rate,Net Profit
+1,ORD-300774,03/02/2021,01/04/2020,First Class,CID-87591,Michael Smith,Home Office,United States,New York,Texas,62424,North,ITM-567743,Office Supplies,Binders,Filing Cabinet,476.92,1,0.1,-98.42
+2,ORD-600409,05/07/2020,01/04/2020,Second Class,CID-62245,Emma Brown,Home Office,Canada,Los Angeles,New York,20315,Central,ITM-224900,Electronics,Binders,Noise Cancelling Headphones,438.01,8,0.33,467.05
+3,ORD-457246,10/08/2021,01/04/2020,Second Class,CID-17857,Robert Taylor,Home Office,United States,New York,British Columbia,22852,North,ITM-135683,Furniture,Paper,Office Paper,960.73,1,0.09,-20.73
+4,ORD-106157,05/14/2021,01/06/2020,Second Class,CID-69708,Emma Brown,Home Office,United Kingdom,Los Angeles,New York,14912,North,ITM-947921,Electronics,Storage,Smartphone X,811.6,9,0.34,-175.79
+5,ORD-369570,07/09/2021,01/05/2020,Standard Class,CID-86540,James Wilson,Home Office,United Kingdom,London,Ontario,19438,North,ITM-330322,Electronics,Binders,Wireless Keyboard,1253.69,4,0.47,-431.21
+6,ORD-359612,09/20/2021,01/09/2020,First Class,CID-87449,Robert Taylor,Home Office,United Kingdom,New York,Quebec,37117,West,ITM-810188,Office Supplies,Phones,Executive Desk,958.75,9,0.45,-348.04
+7,ORD-452767,07/11/2020,01/04/2020,First Class,CID-94331,Emma Brown,Home Office,United States,Chicago,Florida,83067,East,ITM-844159,Furniture,Paper,Ergonomic Chair,621.48,3,0.01,-457.84
+8,ORD-882004,09/16/2021,01/09/2020,Standard Class,CID-96278,Michael Smith,Corporate,Canada,Los Angeles,New York,35079,Central,ITM-722080,Home Essentials,Tables,Noise Cancelling Headphones,1454.32,6,0.1,8.97
+9,ORD-274029,09/26/2020,01/03/2020,Standard Class,CID-15698,Emma Brown,Corporate,United Kingdom,Phoenix,British Columbia,54339,West,ITM-166807,Electronics,Paper,Office Paper,622.17,2,0.19,9.94
+10,ORD-894350,06/24/2021,01/10/2020,Second Class,CID-11707,Michael Smith,Corporate,United States,Los Angeles,Florida,79760,South,ITM-926117,Electronics,Binders,Smartphone X,1313.95,5,0.41,397.84
+11,ORD-254940,10/04/2020,01/11/2020,Same Day,CID-38055,James Wilson,Home Office,United Kingdom,Chicago,California,13629,Central,ITM-262386,Home Essentials,Tables,Filing Cabinet,1292.21,9,0.16,-27.7
+12,ORD-800415,03/21/2021,01/11/2020,Same Day,CID-66203,Alice Johnson,Home Office,United Kingdom,Houston,Florida,28405,South,ITM-158470,Office Supplies,Binders,Laser Printer,1214.31,2,0.39,-486.86
+13,ORD-316112,09/21/2020,01/06/2020,Same Day,CID-59509,Emma Brown,Consumer,Canada,Houston,British Columbia,19557,West,ITM-595667,Furniture,Binders,Office Paper,278.39,9,0.03,384.4
+14,ORD-716038,06/21/2021,01/11/2020,First Class,CID-11302,Olivia Davis,Home Office,United Kingdom,Houston,New York,88961,West,ITM-303517,Furniture,Storage,Executive Desk,927.55,6,0.3,234.72
+15,ORD-923029,11/07/2021,01/05/2020,Second Class,CID-56645,Olivia Davis,Home Office,United Kingdom,London,Quebec,43352,West,ITM-701442,Home Essentials,Chairs,Filing Cabinet,841.03,5,0.04,-260.95
+16,ORD-365336,01/08/2021,01/05/2020,Same Day,CID-64548,Robert Taylor,Consumer,Canada,Los Angeles,New York,96039,North,ITM-827862,Home Essentials,Paper,Filing Cabinet,335.61,5,0,472.36
+17,ORD-248817,08/06/2020,01/02/2020,Standard Class,CID-57153,Alice Johnson,Home Office,United Kingdom,Houston,Florida,71896,East,ITM-214256,Furniture,Phones,Executive Desk,601.17,2,0.02,-188.06
+18,ORD-515912,12/22/2021,01/05/2020,Same Day,CID-32591,Michael Smith,Consumer,United Kingdom,Toronto,Texas,25308,East,ITM-443330,Electronics,Chairs,Filing Cabinet,918.7,3,0.36,-135.74
+19,ORD-195777,05/31/2021,01/02/2020,First Class,CID-97933,James Wilson,Corporate,United Kingdom,London,Quebec,17703,South,ITM-173504,Home Essentials,Appliances,Wireless Keyboard,46.69,1,0.02,470.97
+20,ORD-142843,02/20/2021,01/07/2020,Second Class,CID-16869,Robert Taylor,Corporate,Canada,Los Angeles,California,43869,West,ITM-452880,Electronics,Paper,Filing Cabinet,958.88,3,0,182.39
+21,ORD-639732,08/09/2020,01/10/2020,Second Class,CID-53727,Emma Brown,Home Office,Canada,Chicago,British Columbia,23854,West,ITM-655929,Home Essentials,Paper,Filing Cabinet,810.81,3,0.1,132.47
+22,ORD-613799,06/30/2020,01/09/2020,Second Class,CID-83745,Olivia Davis,Corporate,United Kingdom,Phoenix,New York,24088,East,ITM-103065,Furniture,Appliances,Smartphone X,949.29,3,0.47,106.01
+23,ORD-485731,06/30/2020,01/11/2020,Same Day,CID-11950,James Wilson,Consumer,United Kingdom,Toronto,Florida,63431,East,ITM-833266,Electronics,Chairs,Filing Cabinet,212.72,4,0.31,264.78
+24,ORD-887631,03/01/2021,01/06/2020,Same Day,CID-30878,Michael Smith,Corporate,Canada,Los Angeles,New York,53876,North,ITM-744023,Home Essentials,Paper,Ergonomic Chair,377.85,5,0.32,-488.28
+25,ORD-904084,09/23/2020,01/11/2020,First Class,CID-55428,Olivia Davis,Corporate,United States,Chicago,Florida,45171,Central,ITM-668894,Office Supplies,Paper,Executive Desk,1264.21,6,0.16,136.43
+26,ORD-304218,07/17/2020,01/02/2020,Second Class,CID-53421,Robert Taylor,Corporate,United States,New York,Florida,32254,North,ITM-925517,Office Supplies,Paper,Laser Printer,278.22,7,0.47,-231.98
+27,ORD-954714,06/01/2021,01/06/2020,Second Class,CID-84709,Michael Smith,Corporate,Canada,Houston,Texas,83831,North,ITM-624693,Furniture,Tables,Ergonomic Chair,958.03,1,0.43,179.02
+28,ORD-884813,08/29/2021,01/07/2020,Second Class,CID-61195,James Wilson,Corporate,Canada,New York,British Columbia,38892,North,ITM-977555,Home Essentials,Phones,Office Paper,825.89,2,0.12,-247.28
+29,ORD-865228,06/17/2021,01/10/2020,Standard Class,CID-33994,Alice Johnson,Corporate,United Kingdom,Phoenix,British Columbia,58929,East,ITM-415536,Office Supplies,Chairs,Executive Desk,692.65,9,0.41,258.91
+30,ORD-195670,11/14/2021,01/11/2020,Standard Class,CID-30938,Robert Taylor,Home Office,United Kingdom,London,California,60515,North,ITM-436900,Furniture,Tables,Ergonomic Chair,898.64,9,0.18,-432.24
+31,ORD-745188,06/03/2020,01/10/2020,Same Day,CID-13430,Robert Taylor,Corporate,Canada,Phoenix,British Columbia,23861,East,ITM-109464,Electronics,Paper,Smartphone X,54.54,4,0.2,-116.26
+32,ORD-776830,06/04/2021,01/04/2020,Second Class,CID-12833,Robert Taylor,Consumer,Canada,Chicago,California,68421,Central,ITM-307754,Home Essentials,Tables,Office Paper,1444.15,7,0.45,-293.76
+33,ORD-494111,04/26/2020,01/04/2020,Same Day,CID-76087,Olivia Davis,Consumer,United States,Los Angeles,California,72197,South,ITM-707165,Furniture,Appliances,Noise Cancelling Headphones,407.72,6,0.17,-7.29
+34,ORD-743404,01/06/2020,01/09/2020,First Class,CID-36300,Emma Brown,Corporate,United States,London,Texas,93680,East,ITM-735416,Furniture,Paper,Smartphone X,940.91,3,0.4,40.43
+35,ORD-454045,02/18/2021,01/02/2020,Standard Class,CID-72205,James Wilson,Consumer,United States,Los Angeles,Quebec,62983,North,ITM-758633,Furniture,Binders,Smartphone X,682.43,1,0.12,-440.19
+36,ORD-773184,09/06/2020,01/04/2020,Second Class,CID-52803,Olivia Davis,Home Office,United States,New York,Florida,55655,West,ITM-902390,Furniture,Appliances,Ergonomic Chair,901.74,8,0.21,-309.31
+37,ORD-131696,01/03/2021,01/11/2020,Same Day,CID-52653,Michael Smith,Home Office,Canada,Houston,Ontario,49484,North,ITM-341084,Office Supplies,Binders,Laser Printer,1313.92,3,0.24,-268.41
+38,ORD-399237,03/28/2021,01/03/2020,Second Class,CID-86572,Emma Brown,Corporate,Canada,Toronto,Texas,76985,East,ITM-819930,Home Essentials,Tables,Wireless Keyboard,409.27,10,0.12,438.48
+39,ORD-411028,08/04/2021,01/11/2020,Same Day,CID-46810,Michael Smith,Corporate,Canada,Toronto,California,10747,West,ITM-715408,Electronics,Phones,Wireless Keyboard,1187.12,9,0.04,-347.88
+40,ORD-150628,08/21/2020,01/11/2020,Standard Class,CID-84228,James Wilson,Consumer,United States,Los Angeles,Ontario,73204,South,ITM-228797,Electronics,Tables,Ergonomic Chair,103.33,7,0.1,156.1
+41,ORD-664478,09/30/2020,01/09/2020,First Class,CID-49351,James Wilson,Home Office,United States,Houston,British Columbia,34232,East,ITM-135123,Furniture,Furnishings,Smartphone X,775.46,4,0.34,-358.42
+42,ORD-192259,11/11/2020,01/07/2020,Second Class,CID-98018,James Wilson,Consumer,United Kingdom,Phoenix,Ontario,47283,Central,ITM-464395,Office Supplies,Tables,Smartphone X,307.76,6,0.31,-242.84
+43,ORD-360260,12/06/2021,01/07/2020,Standard Class,CID-47816,Michael Smith,Corporate,United States,Houston,Florida,56826,Central,ITM-199093,Office Supplies,Binders,Wireless Keyboard,1424.88,10,0.05,219.68
+44,ORD-221943,04/17/2021,01/11/2020,Standard Class,CID-32913,Emma Brown,Consumer,United Kingdom,Chicago,Quebec,24173,South,ITM-464152,Electronics,Phones,Wireless Keyboard,1086.28,1,0.04,-46.51
+45,ORD-277030,10/21/2021,01/05/2020,First Class,CID-98513,Olivia Davis,Consumer,Canada,Chicago,New York,36272,West,ITM-561263,Home Essentials,Tables,Noise Cancelling Headphones,975.83,5,0.19,-259.75
+46,ORD-960916,11/21/2021,01/10/2020,First Class,CID-89010,Robert Taylor,Corporate,United Kingdom,Toronto,California,42577,South,ITM-663699,Electronics,Phones,Office Paper,845.74,3,0.01,-108.44
+47,ORD-501700,05/21/2021,01/10/2020,Same Day,CID-74669,Alice Johnson,Corporate,United Kingdom,Chicago,Texas,49112,West,ITM-606116,Home Essentials,Appliances,Laser Printer,1444.4,3,0.16,226.58
+48,ORD-441560,07/22/2021,01/07/2020,First Class,CID-62279,Olivia Davis,Corporate,Canada,Houston,Florida,89884,West,ITM-791158,Office Supplies,Tables,Smartphone X,86.47,7,0.21,-345.2
+49,ORD-760969,05/24/2021,01/02/2020,Second Class,CID-31833,Robert Taylor,Home Office,Canada,Los Angeles,Texas,27105,East,ITM-463024,Electronics,Phones,Ergonomic Chair,864.83,10,0.31,-223.05
+50,ORD-698244,12/07/2020,01/04/2020,Second Class,CID-18220,Olivia Davis,Corporate,Canada,London,New York,44313,East,ITM-359674,Home Essentials,Appliances,Ergonomic Chair,1392.88,8,0.35,435.17
+51,ORD-680780,03/10/2021,01/10/2020,First Class,CID-29171,Alice Johnson,Home Office,United Kingdom,Los Angeles,New York,63471,Central,ITM-809414,Electronics,Paper,Smartphone X,662.61,6,0.32,196.39
+52,ORD-160530,06/23/2021,01/11/2020,Standard Class,CID-64052,Robert Taylor,Home Office,United Kingdom,Chicago,Florida,95912,East,ITM-975952,Home Essentials,Appliances,Office Paper,626.38,10,0.45,244.4
+53,ORD-512209,03/14/2021,01/09/2020,Standard Class,CID-36975,Alice Johnson,Consumer,Canada,Toronto,California,81493,West,ITM-381727,Electronics,Appliances,Noise Cancelling Headphones,708.16,9,0.23,-219.25
+54,ORD-621487,09/21/2021,01/03/2020,Second Class,CID-49741,James Wilson,Consumer,United Kingdom,London,Ontario,44070,East,ITM-123891,Office Supplies,Storage,Office Paper,538.01,7,0.03,307.7
+55,ORD-436669,11/18/2021,01/05/2020,Second Class,CID-70826,Robert Taylor,Consumer,Canada,Chicago,New York,69078,North,ITM-370323,Furniture,Tables,Laser Printer,861.98,4,0.46,-105.68
+56,ORD-899201,06/19/2021,01/03/2020,Second Class,CID-88544,Michael Smith,Consumer,Canada,Los Angeles,Ontario,45150,North,ITM-964911,Furniture,Furnishings,Smartphone X,338.8,7,0.48,-311.6
+57,ORD-261019,04/12/2020,01/04/2020,Standard Class,CID-62486,Olivia Davis,Corporate,United Kingdom,Chicago,Quebec,88661,Central,ITM-943044,Home Essentials,Appliances,Filing Cabinet,903.85,8,0.15,-434
+58,ORD-242945,12/13/2021,01/05/2020,First Class,CID-73665,Robert Taylor,Home Office,United Kingdom,Phoenix,New York,62765,East,ITM-638622,Office Supplies,Phones,Laser Printer,1066.14,2,0.01,302.04
+59,ORD-536521,07/27/2020,01/11/2020,Standard Class,CID-60760,Robert Taylor,Consumer,United States,New York,Florida,17979,Central,ITM-593627,Home Essentials,Chairs,Wireless Keyboard,385.05,2,0.36,-155.25
+60,ORD-974280,02/18/2021,01/10/2020,Standard Class,CID-59427,Olivia Davis,Corporate,United States,London,Florida,97559,West,ITM-350984,Electronics,Furnishings,Office Paper,1214.86,4,0.48,142.19
+61,ORD-731481,11/17/2020,01/06/2020,Standard Class,CID-83287,Michael Smith,Home Office,Canada,Los Angeles,Texas,93509,East,ITM-329021,Home Essentials,Furnishings,Filing Cabinet,804.91,9,0.49,446.56
+62,ORD-868954,04/17/2020,01/11/2020,First Class,CID-77191,James Wilson,Home Office,United States,London,California,80434,East,ITM-489342,Office Supplies,Furnishings,Wireless Keyboard,185.72,4,0.13,263.21
+63,ORD-401205,04/12/2020,01/10/2020,First Class,CID-18162,Alice Johnson,Corporate,Canada,Toronto,British Columbia,56360,West,ITM-803340,Home Essentials,Appliances,Wireless Keyboard,481.22,10,0.06,-7.65
+64,ORD-713146,08/07/2020,01/06/2020,Same Day,CID-52603,Alice Johnson,Home Office,United Kingdom,London,Ontario,25825,Central,ITM-118971,Electronics,Storage,Ergonomic Chair,894.72,3,0.07,-406.46
+65,ORD-556615,02/05/2021,01/06/2020,Standard Class,CID-24809,Alice Johnson,Corporate,United Kingdom,London,New York,71782,Central,ITM-629319,Furniture,Storage,Smartphone X,585.19,9,0.34,-483.58
+66,ORD-330253,01/31/2021,01/09/2020,First Class,CID-18515,James Wilson,Home Office,Canada,New York,Quebec,80951,Central,ITM-579247,Home Essentials,Storage,Laser Printer,131.11,9,0.06,169.64
+67,ORD-342089,12/05/2020,01/05/2020,Standard Class,CID-63397,Alice Johnson,Consumer,United States,Houston,Texas,36515,Central,ITM-485557,Office Supplies,Phones,Executive Desk,809.16,5,0.02,-403.21
+68,ORD-758875,03/30/2020,01/09/2020,Second Class,CID-20716,Emma Brown,Consumer,United Kingdom,London,New York,71175,North,ITM-733415,Office Supplies,Phones,Smartphone X,1212.6,6,0.12,107.81
+69,ORD-324459,09/18/2021,01/04/2020,First Class,CID-85084,James Wilson,Corporate,United States,London,British Columbia,30364,South,ITM-443421,Home Essentials,Binders,Noise Cancelling Headphones,1190.63,4,0.23,-170.31
+70,ORD-322076,08/12/2021,01/10/2020,Second Class,CID-46882,James Wilson,Corporate,United Kingdom,Phoenix,Florida,99740,Central,ITM-135250,Furniture,Tables,Laser Printer,757.37,6,0.22,-90.94
+71,ORD-785706,11/15/2021,01/06/2020,Same Day,CID-89336,Robert Taylor,Home Office,Canada,Houston,California,74648,West,ITM-984576,Electronics,Binders,Laser Printer,1019.15,10,0.38,30.47
+72,ORD-904033,09/04/2021,01/07/2020,Same Day,CID-17675,James Wilson,Consumer,United Kingdom,Houston,Ontario,55470,West,ITM-793016,Office Supplies,Tables,Ergonomic Chair,1365.51,3,0.15,300.2
+73,ORD-531553,05/07/2021,01/09/2020,Second Class,CID-54382,Alice Johnson,Home Office,Canada,Phoenix,Quebec,51640,East,ITM-462195,Office Supplies,Furnishings,Office Paper,162.35,9,0.48,-185.97
+74,ORD-314042,09/25/2020,01/11/2020,First Class,CID-76437,Alice Johnson,Consumer,United Kingdom,Toronto,Ontario,77297,East,ITM-398008,Home Essentials,Appliances,Smartphone X,1463.26,1,0.49,-231.45
+75,ORD-126163,02/28/2020,01/02/2020,Standard Class,CID-22209,James Wilson,Consumer,United States,Phoenix,Quebec,14030,West,ITM-634124,Furniture,Binders,Filing Cabinet,872.43,10,0.11,-473.93
+76,ORD-295219,08/11/2020,01/10/2020,First Class,CID-44251,James Wilson,Corporate,United Kingdom,New York,Florida,38156,West,ITM-297857,Furniture,Binders,Smartphone X,739.65,1,0.46,127.58
+77,ORD-917809,05/27/2021,01/05/2020,Second Class,CID-52959,Olivia Davis,Corporate,Canada,Phoenix,Ontario,70043,North,ITM-705938,Furniture,Phones,Executive Desk,186.5,3,0.2,347.72
+78,ORD-409701,05/20/2020,01/11/2020,First Class,CID-56034,Michael Smith,Corporate,United States,Houston,Ontario,71469,East,ITM-489646,Home Essentials,Storage,Wireless Keyboard,305.5,5,0.03,-156.76
+79,ORD-823652,03/29/2021,01/10/2020,Second Class,CID-57706,Michael Smith,Home Office,United States,New York,Quebec,47486,East,ITM-685128,Furniture,Binders,Smartphone X,420.23,4,0.24,-287.65
+80,ORD-383144,01/19/2020,01/05/2020,Same Day,CID-22125,Emma Brown,Consumer,Canada,Houston,California,23549,North,ITM-837426,Home Essentials,Furnishings,Office Paper,1288.47,2,0.49,-156.87
+81,ORD-142017,10/31/2020,01/06/2020,First Class,CID-12214,Michael Smith,Corporate,United States,Los Angeles,British Columbia,66125,East,ITM-746971,Furniture,Furnishings,Executive Desk,675.38,6,0.06,245.89
+82,ORD-473075,09/28/2021,01/07/2020,First Class,CID-96016,Olivia Davis,Home Office,United Kingdom,Los Angeles,British Columbia,59505,West,ITM-518892,Office Supplies,Storage,Ergonomic Chair,1282.13,7,0.13,392.09
+83,ORD-661011,05/27/2020,01/02/2020,Second Class,CID-29999,Robert Taylor,Corporate,United Kingdom,New York,Texas,84133,North,ITM-332517,Home Essentials,Appliances,Smartphone X,866.48,2,0.35,-64.5
+84,ORD-537465,09/11/2020,01/04/2020,First Class,CID-53211,Michael Smith,Consumer,Canada,New York,Ontario,69566,East,ITM-608374,Electronics,Storage,Wireless Keyboard,403.27,7,0.42,255.21
+85,ORD-303054,07/03/2021,01/04/2020,Same Day,CID-55636,James Wilson,Home Office,Canada,New York,California,27307,West,ITM-246754,Office Supplies,Appliances,Noise Cancelling Headphones,1005.64,3,0.06,-475.39
+86,ORD-405726,10/11/2020,01/06/2020,Second Class,CID-83817,James Wilson,Home Office,Canada,Phoenix,New York,66893,East,ITM-849991,Electronics,Phones,Wireless Keyboard,424.96,9,0.31,119.75
+87,ORD-555685,07/28/2020,01/07/2020,Second Class,CID-22399,Robert Taylor,Consumer,United Kingdom,London,California,44498,West,ITM-732896,Furniture,Binders,Executive Desk,263.96,7,0.08,-199.5
+88,ORD-657013,01/11/2021,01/11/2020,Standard Class,CID-56038,Michael Smith,Corporate,United States,Los Angeles,Texas,62071,Central,ITM-375487,Home Essentials,Storage,Filing Cabinet,1182.67,4,0.3,260.18
+89,ORD-432868,03/07/2020,01/05/2020,Same Day,CID-86942,Robert Taylor,Home Office,Canada,Los Angeles,Ontario,51796,Central,ITM-669956,Electronics,Furnishings,Smartphone X,1096.63,5,0.11,293.98
+90,ORD-355985,01/13/2020,01/09/2020,Second Class,CID-75197,Emma Brown,Consumer,United States,London,California,63638,Central,ITM-435979,Electronics,Furnishings,Ergonomic Chair,446.99,4,0.27,-168.57
+91,ORD-274694,06/01/2021,01/04/2020,Standard Class,CID-91198,Alice Johnson,Corporate,United States,London,Texas,40846,North,ITM-975857,Electronics,Furnishings,Office Paper,761.37,10,0.27,278.85
+92,ORD-176810,10/28/2021,01/08/2020,Second Class,CID-74977,Alice Johnson,Corporate,United Kingdom,Houston,Ontario,41832,East,ITM-533121,Electronics,Furnishings,Laser Printer,276.1,2,0.43,-323.64
+93,ORD-534734,05/25/2020,01/11/2020,Second Class,CID-12974,Robert Taylor,Corporate,United Kingdom,New York,California,85558,South,ITM-741165,Home Essentials,Binders,Filing Cabinet,1107.18,3,0.1,-421.89
+94,ORD-203023,07/13/2021,01/02/2020,Second Class,CID-40247,Alice Johnson,Home Office,United States,Phoenix,New York,79160,South,ITM-735172,Furniture,Chairs,Filing Cabinet,292.85,1,0.37,-202.09
+95,ORD-362804,01/06/2021,01/07/2020,Standard Class,CID-10785,Emma Brown,Consumer,United States,New York,Quebec,75763,Central,ITM-883683,Office Supplies,Phones,Wireless Keyboard,632.32,4,0.46,427.26
+96,ORD-194675,02/16/2021,01/11/2020,Same Day,CID-85060,Emma Brown,Home Office,United Kingdom,New York,Florida,69219,West,ITM-689376,Office Supplies,Binders,Office Paper,1129.16,3,0.01,108.81
+97,ORD-570651,08/31/2021,01/05/2020,Same Day,CID-73977,Emma Brown,Corporate,United States,Los Angeles,Texas,42004,East,ITM-729074,Furniture,Phones,Office Paper,1318.03,7,0.03,448.48
+98,ORD-218349,12/03/2021,01/11/2020,Same Day,CID-65337,James Wilson,Corporate,United States,Houston,Ontario,44919,West,ITM-700073,Furniture,Binders,Laser Printer,426.19,2,0.46,-180.56
+99,ORD-843133,12/07/2020,01/02/2020,Second Class,CID-54096,Emma Brown,Home Office,Canada,Phoenix,New York,70811,East,ITM-824659,Office Supplies,Phones,Office Paper,999.84,6,0.37,285.43
+100,ORD-559002,06/19/2020,01/11/2020,Standard Class,CID-87635,James Wilson,Consumer,United States,Phoenix,Florida,99928,East,ITM-634697,Furniture,Paper,Laser Printer,850.29,1,0.35,-431.99
+101,ORD-110372,03/15/2020,01/03/2020,First Class,CID-26804,James Wilson,Home Office,Canada,Chicago,Ontario,12388,East,ITM-750552,Furniture,Paper,Smartphone X,1370.96,5,0.16,-176.88
+102,ORD-715471,04/30/2021,01/02/2020,Second Class,CID-44170,Olivia Davis,Consumer,United Kingdom,Chicago,New York,61328,East,ITM-322683,Home Essentials,Phones,Executive Desk,1059.47,1,0.4,241.85
+103,ORD-119767,03/01/2020,01/10/2020,Second Class,CID-53268,Emma Brown,Consumer,United Kingdom,Houston,Florida,43554,West,ITM-590364,Office Supplies,Appliances,Office Paper,1462.5,6,0.39,168.92
+104,ORD-686084,02/07/2020,01/07/2020,Same Day,CID-48228,Robert Taylor,Home Office,United Kingdom,Chicago,New York,13606,West,ITM-929127,Home Essentials,Tables,Ergonomic Chair,229.35,3,0.32,-224.06
+105,ORD-741163,01/21/2021,01/08/2020,Standard Class,CID-90262,Robert Taylor,Corporate,Canada,Phoenix,Texas,11154,West,ITM-811827,Office Supplies,Furnishings,Smartphone X,1136.43,10,0.48,-395.17
+106,ORD-561626,12/01/2020,01/09/2020,Same Day,CID-14736,Emma Brown,Home Office,United Kingdom,Toronto,New York,38958,South,ITM-479632,Office Supplies,Tables,Office Paper,857.51,9,0.38,33.33
+107,ORD-295695,08/08/2020,01/04/2020,Standard Class,CID-27496,Michael Smith,Corporate,Canada,Phoenix,British Columbia,94835,East,ITM-632995,Electronics,Furnishings,Noise Cancelling Headphones,10.47,4,0.06,-293.31
+108,ORD-130808,10/26/2020,01/09/2020,Same Day,CID-71626,Robert Taylor,Consumer,United States,London,Ontario,18383,South,ITM-487415,Home Essentials,Phones,Wireless Keyboard,1174.61,3,0.4,187.13
+109,ORD-637086,03/12/2021,01/02/2020,Same Day,CID-71322,Michael Smith,Home Office,Canada,London,New York,99968,Central,ITM-111988,Furniture,Chairs,Wireless Keyboard,1058.9,1,0.4,-192.13
+110,ORD-730742,03/01/2021,01/05/2020,Same Day,CID-29919,Olivia Davis,Consumer,Canada,Houston,Texas,20026,Central,ITM-174374,Electronics,Storage,Noise Cancelling Headphones,1133.15,2,0.49,390.43
+111,ORD-231601,02/04/2020,01/09/2020,Second Class,CID-27261,Michael Smith,Consumer,United States,Chicago,New York,18707,South,ITM-751918,Furniture,Storage,Laser Printer,731.08,5,0.44,192.23
+112,ORD-894541,08/04/2021,01/06/2020,Second Class,CID-28778,Alice Johnson,Home Office,United Kingdom,New York,Ontario,13515,North,ITM-552576,Furniture,Paper,Office Paper,386.4,7,0.35,307.22
+113,ORD-790923,08/21/2020,01/02/2020,Second Class,CID-57753,Emma Brown,Consumer,United Kingdom,Los Angeles,British Columbia,37220,Central,ITM-505167,Office Supplies,Storage,Noise Cancelling Headphones,342.79,9,0.17,-12.86
+114,ORD-677834,06/17/2021,01/07/2020,Standard Class,CID-16197,Alice Johnson,Consumer,United States,Phoenix,New York,93426,East,ITM-207472,Home Essentials,Tables,Smartphone X,241.21,9,0.23,470.87
+115,ORD-952486,08/08/2021,01/11/2020,Same Day,CID-70157,James Wilson,Consumer,United States,Chicago,Ontario,50931,Central,ITM-859967,Home Essentials,Phones,Office Paper,1320.28,10,0.29,-76.8
+116,ORD-849888,04/13/2020,01/06/2020,Standard Class,CID-47523,Alice Johnson,Home Office,Canada,Toronto,California,43433,North,ITM-668138,Home Essentials,Paper,Noise Cancelling Headphones,173.94,5,0.15,114.99
+117,ORD-366046,02/04/2020,01/04/2020,Second Class,CID-76468,Olivia Davis,Consumer,Canada,New York,Quebec,86082,North,ITM-825008,Office Supplies,Binders,Executive Desk,798.84,6,0.3,68.28
+118,ORD-833425,04/14/2020,01/04/2020,Second Class,CID-73360,James Wilson,Corporate,Canada,Phoenix,Texas,33015,South,ITM-640015,Office Supplies,Appliances,Executive Desk,963.12,9,0.16,315.13
+119,ORD-258581,01/21/2021,01/04/2020,Second Class,CID-27572,James Wilson,Home Office,United States,Chicago,Quebec,49067,North,ITM-397605,Furniture,Furnishings,Executive Desk,200.71,3,0.07,456.49
+120,ORD-959134,04/04/2021,01/04/2020,Same Day,CID-88765,Olivia Davis,Corporate,United Kingdom,Chicago,British Columbia,11452,West,ITM-465384,Furniture,Tables,Filing Cabinet,441.28,8,0.39,-231.11
+121,ORD-654243,09/16/2020,01/06/2020,Second Class,CID-36339,James Wilson,Corporate,United Kingdom,London,New York,89747,West,ITM-226401,Home Essentials,Tables,Office Paper,1377.34,1,0.37,331.6
+122,ORD-492921,08/31/2021,01/06/2020,First Class,CID-49695,Alice Johnson,Consumer,United States,London,Quebec,94200,South,ITM-284844,Furniture,Paper,Smartphone X,1147.91,4,0.22,145.08
+123,ORD-267129,05/15/2020,01/02/2020,Same Day,CID-54511,Olivia Davis,Corporate,Canada,Houston,Quebec,41571,West,ITM-647355,Electronics,Appliances,Executive Desk,477.77,8,0.34,-76.24
+124,ORD-548633,02/12/2021,01/02/2020,Same Day,CID-89734,Michael Smith,Home Office,United Kingdom,Los Angeles,New York,62502,East,ITM-914850,Furniture,Chairs,Laser Printer,332,5,0.09,16.26
+125,ORD-524580,01/18/2021,01/02/2020,Standard Class,CID-42592,Emma Brown,Corporate,Canada,London,Texas,51509,North,ITM-759881,Furniture,Furnishings,Smartphone X,1224.22,10,0.32,-224.69
+126,ORD-542718,12/19/2021,01/04/2020,First Class,CID-99273,Robert Taylor,Home Office,United Kingdom,Chicago,British Columbia,25618,South,ITM-523800,Office Supplies,Tables,Wireless Keyboard,1362.93,9,0.47,218.72
+127,ORD-137725,08/16/2020,01/08/2020,Standard Class,CID-53704,Michael Smith,Corporate,United States,Chicago,New York,33644,Central,ITM-323532,Home Essentials,Paper,Smartphone X,175.07,4,0.49,474.34
+128,ORD-552529,11/20/2020,01/10/2020,Same Day,CID-27767,Michael Smith,Corporate,United Kingdom,Chicago,British Columbia,31169,North,ITM-555122,Electronics,Tables,Executive Desk,1133.89,5,0.08,-412.99
+129,ORD-835330,06/15/2021,01/10/2020,Standard Class,CID-92372,Robert Taylor,Consumer,United States,London,Ontario,86688,East,ITM-844059,Home Essentials,Appliances,Office Paper,1313.03,10,0.42,-231.25
+130,ORD-280495,09/01/2020,01/07/2020,Second Class,CID-54254,Alice Johnson,Home Office,United Kingdom,New York,California,74706,South,ITM-594634,Office Supplies,Phones,Laser Printer,311.11,9,0.08,43.57
+131,ORD-367476,06/03/2020,01/04/2020,First Class,CID-15620,Alice Johnson,Corporate,United States,Phoenix,New York,93405,East,ITM-830694,Home Essentials,Furnishings,Ergonomic Chair,1098.6,9,0.23,-394.28
+132,ORD-777729,05/11/2021,01/04/2020,Standard Class,CID-77850,Robert Taylor,Home Office,United States,Houston,Quebec,26021,North,ITM-390550,Electronics,Binders,Ergonomic Chair,561.42,4,0.1,292.1
+133,ORD-553383,08/11/2020,01/02/2020,Standard Class,CID-35406,Michael Smith,Home Office,United Kingdom,Phoenix,California,84958,South,ITM-639013,Furniture,Phones,Ergonomic Chair,211.58,6,0.4,442.85
+134,ORD-969519,02/06/2021,01/02/2020,Second Class,CID-70217,Robert Taylor,Home Office,United States,London,Quebec,25769,South,ITM-822295,Office Supplies,Appliances,Executive Desk,1423.81,1,0.26,240.18
+135,ORD-326696,10/30/2020,01/06/2020,Second Class,CID-39369,Robert Taylor,Home Office,United States,Phoenix,Ontario,52976,East,ITM-350826,Furniture,Furnishings,Office Paper,188.98,8,0.08,128.07
+136,ORD-220585,04/17/2021,01/11/2020,First Class,CID-48289,Emma Brown,Corporate,United States,Phoenix,Florida,43113,South,ITM-523734,Furniture,Furnishings,Office Paper,1047.61,1,0.27,460.44
+137,ORD-335308,05/29/2020,01/06/2020,Same Day,CID-59544,Robert Taylor,Home Office,United States,Phoenix,British Columbia,17409,East,ITM-276547,Furniture,Chairs,Laser Printer,1307.83,3,0.35,40.4
+138,ORD-208871,06/17/2021,01/10/2020,Second Class,CID-49581,Michael Smith,Home Office,United States,New York,Quebec,65406,West,ITM-762239,Electronics,Furnishings,Noise Cancelling Headphones,846.73,3,0.45,363.58
+139,ORD-353036,01/29/2020,01/03/2020,Standard Class,CID-99814,Emma Brown,Corporate,United Kingdom,Toronto,Texas,42956,Central,ITM-131272,Office Supplies,Paper,Office Paper,993.79,5,0.2,433.82
+140,ORD-500899,10/24/2021,01/09/2020,Same Day,CID-51096,Olivia Davis,Corporate,United Kingdom,Toronto,Texas,44501,Central,ITM-320816,Furniture,Paper,Smartphone X,557.33,8,0.05,320.7
+141,ORD-913704,07/27/2020,01/02/2020,Same Day,CID-48927,Alice Johnson,Home Office,Canada,Toronto,Quebec,54436,South,ITM-258985,Electronics,Tables,Laser Printer,805.84,6,0.03,-416.33
+142,ORD-929602,08/05/2021,01/07/2020,Second Class,CID-83167,Michael Smith,Home Office,United Kingdom,Phoenix,New York,38926,South,ITM-151856,Furniture,Storage,Office Paper,736.9,1,0.18,82.45
+143,ORD-327254,09/14/2021,01/07/2020,Same Day,CID-89259,Alice Johnson,Corporate,United States,Houston,Florida,96277,South,ITM-473088,Furniture,Phones,Noise Cancelling Headphones,644.68,10,0.28,-432.09
+144,ORD-312026,09/21/2020,01/07/2020,Standard Class,CID-97272,Olivia Davis,Corporate,United States,London,Texas,11812,Central,ITM-643631,Furniture,Binders,Smartphone X,533.08,8,0.44,-139.23
+145,ORD-876930,03/12/2020,01/09/2020,Same Day,CID-41062,Olivia Davis,Consumer,Canada,Toronto,Texas,41579,Central,ITM-518765,Electronics,Paper,Smartphone X,926.02,3,0.15,-473.28
+146,ORD-874643,12/17/2020,01/04/2020,Standard Class,CID-61398,James Wilson,Consumer,United States,Los Angeles,Texas,49874,North,ITM-857935,Electronics,Furnishings,Laser Printer,1330.78,7,0.1,7.4
+147,ORD-709002,09/25/2020,01/06/2020,Standard Class,CID-75148,Robert Taylor,Home Office,United States,Los Angeles,California,41044,West,ITM-101112,Home Essentials,Phones,Smartphone X,398.26,9,0.25,-194.39
+148,ORD-761756,04/26/2021,01/07/2020,Standard Class,CID-21260,Emma Brown,Home Office,United States,New York,Ontario,32437,North,ITM-742351,Electronics,Binders,Executive Desk,882.23,3,0.06,-388.2
+149,ORD-650887,11/21/2020,01/11/2020,First Class,CID-10175,Emma Brown,Home Office,Canada,Phoenix,British Columbia,78295,North,ITM-793992,Office Supplies,Binders,Filing Cabinet,381.87,8,0.18,470.42
+150,ORD-872586,02/13/2021,01/05/2020,First Class,CID-92926,James Wilson,Home Office,Canada,London,Florida,41712,East,ITM-471577,Furniture,Furnishings,Filing Cabinet,199.07,6,0.41,-391.22
+151,ORD-762234,06/12/2021,01/08/2020,Standard Class,CID-69866,Alice Johnson,Corporate,United States,New York,New York,77110,West,ITM-334031,Home Essentials,Chairs,Office Paper,1421.62,6,0.12,-245.71
+152,ORD-988136,09/21/2020,01/05/2020,Same Day,CID-87894,Emma Brown,Corporate,United States,Los Angeles,British Columbia,24953,Central,ITM-550671,Furniture,Paper,Office Paper,363.92,1,0.27,107.18
+153,ORD-611511,09/13/2020,01/06/2020,Same Day,CID-72165,Alice Johnson,Corporate,United States,Houston,California,40874,West,ITM-498337,Furniture,Phones,Filing Cabinet,1460.17,8,0.45,-46.02
+154,ORD-275860,04/09/2021,01/11/2020,Second Class,CID-62011,Robert Taylor,Home Office,Canada,New York,Ontario,56904,South,ITM-893440,Furniture,Binders,Filing Cabinet,186.85,5,0.38,-306.6
+155,ORD-389669,06/03/2021,01/10/2020,First Class,CID-14575,James Wilson,Corporate,Canada,London,Quebec,86796,South,ITM-892402,Furniture,Appliances,Smartphone X,885.39,3,0.08,-409.63
+156,ORD-348506,05/25/2021,01/07/2020,First Class,CID-21984,James Wilson,Home Office,United States,Toronto,Ontario,84845,Central,ITM-385232,Office Supplies,Phones,Noise Cancelling Headphones,52.94,9,0.07,200.64
+157,ORD-280694,10/28/2020,01/09/2020,Standard Class,CID-28247,Michael Smith,Corporate,United States,Los Angeles,New York,31334,Central,ITM-139836,Furniture,Appliances,Laser Printer,1156.65,7,0.37,224.29
+158,ORD-318560,12/04/2020,01/06/2020,Standard Class,CID-80620,Michael Smith,Home Office,United Kingdom,Houston,Ontario,53157,Central,ITM-155735,Home Essentials,Chairs,Noise Cancelling Headphones,876.89,3,0.14,-196.82
+159,ORD-894719,03/31/2020,01/07/2020,First Class,CID-89584,Emma Brown,Corporate,United Kingdom,Chicago,British Columbia,43457,South,ITM-641612,Furniture,Appliances,Filing Cabinet,541.98,7,0.36,-448.45
+160,ORD-254460,11/30/2021,01/02/2020,Same Day,CID-58083,Robert Taylor,Home Office,United States,Houston,New York,91020,South,ITM-658894,Furniture,Furnishings,Office Paper,826.72,9,0.03,-236.36
+161,ORD-637095,03/23/2020,01/06/2020,Same Day,CID-38796,Robert Taylor,Consumer,Canada,Phoenix,California,27733,North,ITM-302030,Furniture,Furnishings,Noise Cancelling Headphones,910.78,5,0.15,343.81
+162,ORD-538584,01/09/2020,01/03/2020,Same Day,CID-13173,Alice Johnson,Consumer,United States,Phoenix,Ontario,77411,West,ITM-728892,Office Supplies,Storage,Wireless Keyboard,730.64,2,0.33,236.9
+163,ORD-125016,12/09/2020,01/06/2020,Standard Class,CID-14928,Emma Brown,Home Office,United States,Chicago,British Columbia,98824,Central,ITM-644258,Home Essentials,Tables,Filing Cabinet,857.77,10,0.31,-338.04
+164,ORD-926986,08/11/2021,01/09/2020,Same Day,CID-77051,Emma Brown,Home Office,Canada,London,Texas,95321,North,ITM-188306,Office Supplies,Tables,Wireless Keyboard,629.81,9,0.15,210.56
+165,ORD-663150,12/22/2020,01/11/2020,Second Class,CID-33632,Alice Johnson,Home Office,United States,Chicago,Florida,15812,Central,ITM-628296,Furniture,Phones,Executive Desk,1075.96,10,0.12,-187.55
+166,ORD-961012,08/02/2021,01/05/2020,Same Day,CID-82020,Olivia Davis,Home Office,United States,Chicago,New York,44942,West,ITM-458393,Office Supplies,Furnishings,Wireless Keyboard,603.34,3,0.11,-448.82
+167,ORD-223969,01/16/2021,01/03/2020,Standard Class,CID-95724,Emma Brown,Consumer,United States,Chicago,Ontario,94853,South,ITM-861505,Furniture,Paper,Noise Cancelling Headphones,241.24,5,0.12,-460.7
+168,ORD-953841,04/03/2021,01/09/2020,Second Class,CID-16122,Olivia Davis,Consumer,United States,New York,Ontario,68024,North,ITM-464463,Electronics,Paper,Ergonomic Chair,49.99,9,0.37,167.8
+169,ORD-310086,09/07/2021,01/04/2020,Same Day,CID-29440,Michael Smith,Corporate,United States,Houston,Florida,72627,West,ITM-368642,Office Supplies,Binders,Noise Cancelling Headphones,747.22,7,0.29,-370.64
+170,ORD-392248,04/03/2021,01/04/2020,Same Day,CID-69951,Alice Johnson,Corporate,United Kingdom,New York,British Columbia,21936,North,ITM-237046,Home Essentials,Chairs,Filing Cabinet,774.92,4,0.08,-203.38
+171,ORD-912216,06/23/2020,01/07/2020,Second Class,CID-48418,Emma Brown,Corporate,United States,New York,Florida,52868,East,ITM-430086,Home Essentials,Furnishings,Smartphone X,879,6,0.1,-153.6
+172,ORD-247890,07/14/2020,01/10/2020,Second Class,CID-31942,Olivia Davis,Consumer,United States,Toronto,California,10291,East,ITM-666332,Electronics,Binders,Noise Cancelling Headphones,834.48,3,0.19,301.25
+173,ORD-261825,04/07/2020,01/11/2020,Second Class,CID-32231,James Wilson,Consumer,Canada,Chicago,Texas,80751,Central,ITM-444854,Office Supplies,Tables,Ergonomic Chair,476.18,8,0.19,-79.24
+174,ORD-862253,10/16/2020,01/04/2020,Standard Class,CID-80522,Olivia Davis,Corporate,Canada,London,Ontario,22621,West,ITM-732457,Electronics,Furnishings,Filing Cabinet,163.22,3,0.2,453.81
+175,ORD-667695,07/16/2021,01/10/2020,Second Class,CID-82494,Alice Johnson,Home Office,United States,Toronto,Florida,14886,Central,ITM-243825,Electronics,Paper,Noise Cancelling Headphones,92.68,1,0.05,-429.64
+176,ORD-240945,10/06/2020,01/08/2020,Same Day,CID-96501,Robert Taylor,Corporate,Canada,Toronto,New York,83141,West,ITM-792410,Home Essentials,Paper,Smartphone X,265.71,1,0.11,-344.54
+177,ORD-895998,06/15/2020,01/07/2020,Same Day,CID-47670,James Wilson,Corporate,United Kingdom,New York,Quebec,47563,Central,ITM-176034,Electronics,Storage,Wireless Keyboard,560.66,10,0.1,84.31
+178,ORD-568493,09/13/2021,01/04/2020,Second Class,CID-75916,Olivia Davis,Home Office,United Kingdom,Los Angeles,New York,72970,South,ITM-342108,Furniture,Binders,Office Paper,1123.97,6,0.4,-9.31
+179,ORD-407562,09/22/2020,01/09/2020,First Class,CID-32317,Robert Taylor,Corporate,Canada,Phoenix,Texas,65443,North,ITM-881855,Electronics,Appliances,Wireless Keyboard,519.58,5,0.48,398
+180,ORD-782856,10/21/2020,01/08/2020,First Class,CID-49153,Emma Brown,Home Office,United States,Los Angeles,Florida,73784,East,ITM-192326,Electronics,Appliances,Ergonomic Chair,604.75,3,0.05,461.08
+181,ORD-374404,03/03/2021,01/06/2020,Second Class,CID-78952,Alice Johnson,Consumer,United Kingdom,Houston,Ontario,29647,West,ITM-827594,Office Supplies,Appliances,Noise Cancelling Headphones,291.43,8,0.42,355.77
+182,ORD-901187,08/18/2020,01/10/2020,Standard Class,CID-38164,Emma Brown,Consumer,United States,London,Texas,67548,East,ITM-978697,Office Supplies,Tables,Office Paper,1297.05,2,0.14,-69.3
+183,ORD-128094,07/19/2021,01/02/2020,Same Day,CID-22743,Emma Brown,Consumer,United States,New York,Quebec,84485,North,ITM-223916,Furniture,Phones,Wireless Keyboard,1196.99,1,0.23,-132.06
+184,ORD-328210,05/16/2021,01/10/2020,Same Day,CID-38005,Emma Brown,Corporate,Canada,New York,New York,50601,East,ITM-847148,Office Supplies,Paper,Laser Printer,1255.85,1,0.38,-354.98
+185,ORD-970345,06/29/2021,01/03/2020,First Class,CID-15741,James Wilson,Home Office,United Kingdom,Toronto,British Columbia,27361,West,ITM-719632,Home Essentials,Storage,Noise Cancelling Headphones,203.35,10,0.34,-19.77
+186,ORD-631713,04/17/2021,01/07/2020,Standard Class,CID-56856,James Wilson,Corporate,United Kingdom,Chicago,California,11752,South,ITM-189315,Home Essentials,Tables,Executive Desk,76.69,6,0.13,236.67
+187,ORD-565564,07/29/2021,01/04/2020,Standard Class,CID-78308,Robert Taylor,Consumer,United States,London,British Columbia,60429,South,ITM-755870,Office Supplies,Paper,Laser Printer,1392.56,6,0.42,-252.38
+188,ORD-975388,06/02/2020,01/06/2020,Second Class,CID-97494,Robert Taylor,Home Office,United Kingdom,Houston,Texas,65801,East,ITM-290502,Office Supplies,Storage,Laser Printer,1497.57,7,0.29,119.78
+189,ORD-407598,12/30/2021,01/06/2020,Same Day,CID-39646,Robert Taylor,Home Office,Canada,Los Angeles,Texas,21440,Central,ITM-996865,Office Supplies,Binders,Filing Cabinet,69.63,5,0.04,-277.65
+190,ORD-902420,12/03/2020,01/09/2020,First Class,CID-56634,Michael Smith,Home Office,United States,Chicago,Texas,71612,South,ITM-231113,Electronics,Appliances,Ergonomic Chair,1098.62,7,0.03,458.95
+191,ORD-907231,01/21/2020,01/06/2020,Second Class,CID-56547,James Wilson,Corporate,United States,London,Texas,27270,West,ITM-857555,Home Essentials,Appliances,Noise Cancelling Headphones,424.51,9,0.45,148.28
+192,ORD-974267,09/29/2021,01/02/2020,Same Day,CID-48138,Robert Taylor,Corporate,United Kingdom,Chicago,Texas,93770,Central,ITM-548165,Office Supplies,Paper,Noise Cancelling Headphones,903.72,5,0.12,-45.62
+193,ORD-556891,12/04/2020,01/06/2020,First Class,CID-66207,James Wilson,Home Office,Canada,Houston,California,38992,West,ITM-584377,Office Supplies,Tables,Office Paper,1062.47,1,0.21,-203.23
+194,ORD-774633,03/28/2020,01/09/2020,Second Class,CID-46934,Alice Johnson,Corporate,United Kingdom,Toronto,British Columbia,64145,West,ITM-879618,Electronics,Furnishings,Ergonomic Chair,28.12,1,0.44,485.01
+195,ORD-562632,05/01/2020,01/02/2020,First Class,CID-60370,Emma Brown,Consumer,Canada,London,Quebec,94305,East,ITM-547746,Electronics,Appliances,Office Paper,661.31,7,0.06,-319.29
+196,ORD-961465,11/13/2020,01/04/2020,First Class,CID-80167,Michael Smith,Corporate,United States,Houston,California,83774,South,ITM-592604,Home Essentials,Appliances,Laser Printer,868.53,6,0.08,-172.8
+197,ORD-857887,08/12/2020,01/03/2020,Second Class,CID-34690,Michael Smith,Home Office,United Kingdom,London,Quebec,60171,North,ITM-371399,Home Essentials,Appliances,Laser Printer,730.72,4,0.04,89.42
+198,ORD-942197,09/29/2021,01/02/2020,Standard Class,CID-31070,Robert Taylor,Consumer,Canada,New York,New York,44250,East,ITM-953785,Office Supplies,Tables,Wireless Keyboard,1272.48,8,0.12,-3.42
+199,ORD-429650,10/09/2020,01/04/2020,Standard Class,CID-31279,Robert Taylor,Corporate,United States,Chicago,Florida,48539,West,ITM-632893,Electronics,Chairs,Smartphone X,545.83,10,0.32,-155.38
+200,ORD-976490,09/07/2021,01/05/2020,Same Day,CID-80527,Olivia Davis,Corporate,United States,Toronto,Ontario,81350,Central,ITM-760803,Home Essentials,Phones,Noise Cancelling Headphones,99.77,9,0.15,-85.29
+201,ORD-351970,10/09/2020,01/08/2020,Second Class,CID-83640,Robert Taylor,Consumer,United States,Phoenix,Ontario,54915,East,ITM-210197,Home Essentials,Binders,Filing Cabinet,317.8,7,0.3,-277.29
+202,ORD-594372,09/15/2021,01/11/2020,Same Day,CID-65800,Alice Johnson,Home Office,United States,Toronto,Florida,16199,South,ITM-394662,Electronics,Furnishings,Wireless Keyboard,562.5,10,0.15,-195.69
+203,ORD-946892,01/20/2021,01/04/2020,Second Class,CID-77515,Alice Johnson,Home Office,United States,Toronto,British Columbia,79526,West,ITM-236887,Furniture,Phones,Ergonomic Chair,802.15,4,0.13,367.22
+204,ORD-104967,06/29/2020,01/05/2020,First Class,CID-99558,James Wilson,Consumer,United States,London,Texas,87093,Central,ITM-528648,Office Supplies,Binders,Smartphone X,81.83,2,0.03,-65.05
+205,ORD-536883,05/06/2020,01/06/2020,Standard Class,CID-95860,Olivia Davis,Consumer,United States,Phoenix,Texas,53186,South,ITM-821722,Furniture,Tables,Noise Cancelling Headphones,205.12,9,0.11,-268.08
+206,ORD-820005,06/29/2021,01/09/2020,Same Day,CID-73502,Michael Smith,Consumer,Canada,Los Angeles,Florida,76682,North,ITM-465862,Home Essentials,Binders,Executive Desk,796.54,5,0.21,-168.43
+207,ORD-567616,10/09/2020,01/07/2020,Second Class,CID-57501,Emma Brown,Consumer,United States,Los Angeles,Ontario,31640,North,ITM-820401,Furniture,Binders,Wireless Keyboard,880.95,5,0.08,-22.02
+208,ORD-517629,08/14/2021,01/08/2020,Second Class,CID-16594,Olivia Davis,Corporate,United States,Los Angeles,Texas,80710,North,ITM-283438,Home Essentials,Binders,Wireless Keyboard,126.47,4,0.1,-411.52
+209,ORD-135440,01/07/2020,01/08/2020,Same Day,CID-33255,Alice Johnson,Home Office,United States,Toronto,British Columbia,67262,South,ITM-289987,Furniture,Tables,Ergonomic Chair,852.75,1,0.01,224.08
+210,ORD-166306,08/25/2020,01/08/2020,Second Class,CID-26849,Michael Smith,Home Office,Canada,New York,Ontario,99791,Central,ITM-282623,Office Supplies,Paper,Smartphone X,1307.95,3,0.31,-477.64
+211,ORD-426424,07/27/2021,01/08/2020,Standard Class,CID-86973,Robert Taylor,Home Office,United Kingdom,Houston,Quebec,62134,East,ITM-713698,Electronics,Storage,Laser Printer,435.56,6,0.16,317.34
+212,ORD-472899,09/03/2020,01/07/2020,First Class,CID-79395,Alice Johnson,Home Office,Canada,Los Angeles,New York,78823,Central,ITM-460982,Electronics,Binders,Executive Desk,181.07,10,0.06,350.6
+213,ORD-513625,01/01/2020,01/07/2020,First Class,CID-31271,Emma Brown,Corporate,United States,New York,California,75901,North,ITM-299675,Home Essentials,Paper,Ergonomic Chair,1047.88,5,0.29,125.84
+214,ORD-558592,02/19/2020,01/02/2020,Second Class,CID-36172,Michael Smith,Home Office,United States,London,Texas,80369,North,ITM-729938,Home Essentials,Furnishings,Noise Cancelling Headphones,193.5,9,0.03,162.42
+215,ORD-234061,08/06/2020,01/07/2020,Second Class,CID-95415,Emma Brown,Home Office,United Kingdom,Toronto,Quebec,88285,South,ITM-548097,Home Essentials,Furnishings,Executive Desk,507.73,3,0.27,325.38
+216,ORD-183325,12/07/2020,01/06/2020,First Class,CID-29985,Emma Brown,Consumer,United States,London,California,33182,South,ITM-288397,Furniture,Phones,Executive Desk,417.6,2,0.31,-276.63
+217,ORD-966814,10/26/2020,01/02/2020,Second Class,CID-46676,Alice Johnson,Home Office,United Kingdom,Los Angeles,Texas,17194,East,ITM-621053,Office Supplies,Chairs,Office Paper,458.14,10,0.32,326.77
+218,ORD-166608,08/18/2021,01/08/2020,Second Class,CID-99030,Robert Taylor,Home Office,United States,Toronto,British Columbia,89717,East,ITM-836259,Home Essentials,Binders,Executive Desk,743.64,9,0.32,-485.86
+219,ORD-477870,04/16/2020,01/11/2020,Standard Class,CID-71599,Alice Johnson,Home Office,United States,New York,Ontario,78555,East,ITM-747588,Office Supplies,Storage,Office Paper,685.31,8,0.32,112.34
+220,ORD-400581,05/26/2021,01/09/2020,Standard Class,CID-36354,Robert Taylor,Corporate,United Kingdom,Toronto,Texas,68362,West,ITM-566937,Home Essentials,Chairs,Executive Desk,1192.59,2,0.39,-426.95
+221,ORD-201913,02/22/2020,01/08/2020,First Class,CID-47826,Robert Taylor,Home Office,Canada,New York,British Columbia,21708,East,ITM-191051,Home Essentials,Furnishings,Office Paper,817.14,10,0.23,495.19
+222,ORD-217663,06/25/2020,01/06/2020,Standard Class,CID-45427,Alice Johnson,Corporate,Canada,Toronto,Florida,74572,Central,ITM-248522,Furniture,Appliances,Smartphone X,1179.17,6,0.3,86.17
+223,ORD-675227,10/29/2021,01/07/2020,Same Day,CID-13814,Alice Johnson,Corporate,United States,London,Quebec,15982,East,ITM-761380,Electronics,Chairs,Ergonomic Chair,970.3,1,0.07,-108.24
+224,ORD-321534,08/07/2020,01/09/2020,Standard Class,CID-80532,Robert Taylor,Corporate,Canada,Toronto,Quebec,69138,North,ITM-242607,Electronics,Binders,Filing Cabinet,87.01,9,0.35,-343.51
+225,ORD-629779,04/29/2021,01/04/2020,Second Class,CID-66711,Emma Brown,Consumer,Canada,Phoenix,Quebec,55318,Central,ITM-733971,Furniture,Chairs,Noise Cancelling Headphones,461.04,10,0.18,-454.22
+226,ORD-723514,06/20/2020,01/09/2020,First Class,CID-27925,James Wilson,Corporate,United Kingdom,Houston,Texas,12039,East,ITM-905739,Furniture,Chairs,Laser Printer,516.9,1,0.25,299.77
+227,ORD-789242,08/22/2020,01/09/2020,Standard Class,CID-72350,Emma Brown,Home Office,United Kingdom,Phoenix,California,51708,North,ITM-458157,Office Supplies,Binders,Ergonomic Chair,847.61,4,0.37,-196.45
+228,ORD-208786,07/30/2021,01/04/2020,First Class,CID-11311,Robert Taylor,Consumer,Canada,Los Angeles,British Columbia,71522,West,ITM-191391,Electronics,Appliances,Executive Desk,1418.12,3,0.28,57.2
+229,ORD-270702,02/20/2020,01/03/2020,First Class,CID-46605,Michael Smith,Consumer,United Kingdom,Toronto,Texas,19791,West,ITM-328133,Furniture,Appliances,Noise Cancelling Headphones,1480.7,2,0.49,253.83
+230,ORD-947348,10/11/2021,01/04/2020,Same Day,CID-58200,James Wilson,Corporate,United States,New York,British Columbia,44092,Central,ITM-953206,Office Supplies,Storage,Office Paper,638.36,1,0.36,21.55
+231,ORD-721007,05/22/2020,01/10/2020,First Class,CID-59731,Alice Johnson,Home Office,United Kingdom,Houston,British Columbia,23151,South,ITM-814737,Office Supplies,Binders,Laser Printer,11.73,3,0.25,456.86
+232,ORD-467709,11/05/2020,01/06/2020,Second Class,CID-43918,James Wilson,Corporate,Canada,Houston,New York,16216,South,ITM-619195,Furniture,Furnishings,Wireless Keyboard,418.37,9,0.01,-75.66
+233,ORD-578781,08/03/2021,01/04/2020,Second Class,CID-19707,Olivia Davis,Corporate,Canada,Houston,British Columbia,43228,West,ITM-882184,Electronics,Tables,Laser Printer,116.42,8,0.15,-149.78
+234,ORD-732925,03/22/2021,01/02/2020,Standard Class,CID-25585,Emma Brown,Corporate,United States,Phoenix,Quebec,36092,North,ITM-919629,Electronics,Storage,Office Paper,125.35,6,0.15,445.33
+235,ORD-588121,07/16/2020,01/05/2020,First Class,CID-76082,Robert Taylor,Consumer,United Kingdom,Toronto,New York,75495,West,ITM-699955,Office Supplies,Appliances,Smartphone X,979.01,9,0.29,-59.78
+236,ORD-441060,07/19/2020,01/03/2020,First Class,CID-91480,Michael Smith,Consumer,United States,London,New York,37299,South,ITM-490106,Furniture,Phones,Office Paper,1141.09,6,0.36,-265.23
+237,ORD-287040,12/02/2021,01/03/2020,Standard Class,CID-17549,Robert Taylor,Corporate,Canada,New York,Texas,61945,North,ITM-114370,Furniture,Furnishings,Wireless Keyboard,651.55,9,0.05,-463.88
+238,ORD-367243,07/13/2021,01/08/2020,Second Class,CID-36222,Emma Brown,Consumer,United Kingdom,Los Angeles,British Columbia,68420,North,ITM-889761,Home Essentials,Furnishings,Noise Cancelling Headphones,405.57,10,0.15,-45.12
+239,ORD-440797,04/17/2020,01/05/2020,Standard Class,CID-59774,Emma Brown,Home Office,United Kingdom,Phoenix,California,60647,South,ITM-388563,Furniture,Storage,Executive Desk,1264.52,5,0.06,-388.67
+240,ORD-736708,06/18/2020,01/08/2020,Same Day,CID-70338,Olivia Davis,Home Office,Canada,Los Angeles,Quebec,80529,Central,ITM-155577,Home Essentials,Binders,Smartphone X,1195.3,8,0.32,334.01
+241,ORD-835180,04/17/2020,01/05/2020,Second Class,CID-50360,Emma Brown,Corporate,United States,Phoenix,Quebec,55503,East,ITM-163850,Furniture,Binders,Noise Cancelling Headphones,362.99,5,0.41,-419.73
+242,ORD-727385,01/11/2021,01/09/2020,Second Class,CID-30630,Emma Brown,Consumer,United States,Houston,New York,46245,East,ITM-609274,Office Supplies,Tables,Wireless Keyboard,412.28,5,0.14,-86.29
+243,ORD-967955,06/15/2020,01/07/2020,First Class,CID-90345,Robert Taylor,Corporate,United States,Toronto,Texas,39951,South,ITM-487176,Home Essentials,Furnishings,Wireless Keyboard,976.45,8,0.06,-224.62
+244,ORD-685648,06/07/2020,01/02/2020,Same Day,CID-74024,Michael Smith,Consumer,Canada,Phoenix,Quebec,16262,South,ITM-189014,Electronics,Furnishings,Filing Cabinet,113.44,3,0.18,-278.6
+245,ORD-943463,07/18/2020,01/06/2020,First Class,CID-90212,Alice Johnson,Consumer,United Kingdom,Toronto,Ontario,76366,West,ITM-457745,Home Essentials,Chairs,Smartphone X,1203.73,8,0.03,175.24
+246,ORD-591451,02/17/2021,01/02/2020,Same Day,CID-24572,Michael Smith,Home Office,Canada,New York,Texas,56377,East,ITM-651205,Office Supplies,Chairs,Filing Cabinet,879.14,2,0,230.04
+247,ORD-354900,01/03/2020,01/02/2020,Second Class,CID-15642,Olivia Davis,Consumer,Canada,Toronto,Florida,59410,East,ITM-631562,Electronics,Chairs,Office Paper,30.89,4,0.49,219.88
+248,ORD-758581,12/23/2020,01/05/2020,Standard Class,CID-18704,Olivia Davis,Home Office,United Kingdom,Toronto,New York,95239,Central,ITM-901045,Office Supplies,Furnishings,Ergonomic Chair,1151.16,2,0.14,-85.8
+249,ORD-429105,04/04/2020,01/11/2020,First Class,CID-13711,Robert Taylor,Corporate,United States,Phoenix,Texas,35177,North,ITM-531591,Furniture,Phones,Noise Cancelling Headphones,153.18,5,0.05,220.58
+250,ORD-668578,01/23/2020,01/07/2020,First Class,CID-12203,James Wilson,Consumer,United Kingdom,New York,British Columbia,96112,South,ITM-978352,Office Supplies,Tables,Smartphone X,722.43,7,0.37,-392.54
+251,ORD-254116,06/18/2021,01/11/2020,First Class,CID-26221,Alice Johnson,Corporate,Canada,New York,Ontario,64450,West,ITM-510401,Electronics,Furnishings,Smartphone X,1129.29,10,0.35,-355.4
+252,ORD-602778,05/01/2020,01/04/2020,First Class,CID-57113,Olivia Davis,Consumer,United States,New York,New York,90529,North,ITM-607194,Office Supplies,Phones,Ergonomic Chair,1066.92,4,0.43,-237.26
+253,ORD-474929,01/16/2021,01/02/2020,Same Day,CID-14966,Michael Smith,Corporate,Canada,Houston,Texas,72089,North,ITM-782950,Electronics,Furnishings,Smartphone X,703.51,3,0.38,267.78
+254,ORD-777051,08/11/2021,01/04/2020,Same Day,CID-70242,Emma Brown,Consumer,Canada,Toronto,Quebec,20724,South,ITM-538839,Home Essentials,Furnishings,Filing Cabinet,754.7,1,0.46,393.85
+255,ORD-558959,01/21/2020,01/08/2020,First Class,CID-65515,Olivia Davis,Corporate,Canada,New York,Ontario,79926,West,ITM-190488,Furniture,Chairs,Ergonomic Chair,411.23,3,0.43,-361.32
+256,ORD-547571,03/04/2021,01/08/2020,Same Day,CID-49189,James Wilson,Consumer,United Kingdom,Houston,Texas,79289,West,ITM-805531,Furniture,Binders,Office Paper,1092.33,2,0.02,-280.99
+257,ORD-561475,03/29/2020,01/04/2020,First Class,CID-11215,Michael Smith,Consumer,United Kingdom,Chicago,Florida,80624,North,ITM-708431,Electronics,Phones,Laser Printer,719.74,6,0.2,-42.19
+258,ORD-517912,12/04/2020,01/08/2020,First Class,CID-70028,Olivia Davis,Home Office,Canada,Houston,Ontario,96640,North,ITM-547198,Home Essentials,Paper,Executive Desk,511.91,10,0.37,-56.57
+259,ORD-458624,10/31/2020,01/07/2020,Second Class,CID-66846,Michael Smith,Home Office,United States,Los Angeles,California,60432,East,ITM-801142,Home Essentials,Storage,Wireless Keyboard,1191.64,1,0.29,-444.47
+260,ORD-620796,09/08/2020,01/11/2020,First Class,CID-18069,James Wilson,Home Office,United Kingdom,London,Florida,11792,West,ITM-175739,Home Essentials,Paper,Laser Printer,542.56,6,0.31,238.17
+261,ORD-718685,06/20/2021,01/07/2020,First Class,CID-68744,Michael Smith,Home Office,United States,Los Angeles,Ontario,67062,South,ITM-827651,Electronics,Chairs,Filing Cabinet,914.22,6,0.08,-7.15
+262,ORD-174427,09/18/2021,01/10/2020,Standard Class,CID-72953,Olivia Davis,Corporate,United States,Chicago,Florida,77670,South,ITM-441436,Electronics,Storage,Executive Desk,975.88,1,0.32,-471.52
+263,ORD-623168,07/04/2020,01/06/2020,First Class,CID-66265,Emma Brown,Consumer,United Kingdom,Chicago,New York,27337,North,ITM-764478,Home Essentials,Chairs,Filing Cabinet,1348.19,2,0.36,408.26
+264,ORD-173805,11/17/2020,01/08/2020,Same Day,CID-87886,Olivia Davis,Consumer,United States,London,Texas,81549,East,ITM-122875,Office Supplies,Paper,Filing Cabinet,595.32,10,0.3,314.91
+265,ORD-828247,02/29/2020,01/11/2020,Second Class,CID-23438,James Wilson,Corporate,United Kingdom,Phoenix,Florida,92872,South,ITM-695346,Furniture,Tables,Laser Printer,31.33,10,0.06,453.71
+266,ORD-257808,08/01/2021,01/11/2020,Same Day,CID-31076,James Wilson,Consumer,United Kingdom,Los Angeles,Ontario,88850,Central,ITM-925966,Electronics,Storage,Filing Cabinet,531.42,8,0.48,-8.12
+267,ORD-422652,03/30/2020,01/07/2020,Same Day,CID-39728,James Wilson,Corporate,Canada,London,Florida,58221,East,ITM-185157,Home Essentials,Binders,Executive Desk,580.49,1,0.16,-409.31
+268,ORD-147598,02/01/2021,01/11/2020,Second Class,CID-14933,Emma Brown,Home Office,United States,Phoenix,Florida,88009,East,ITM-130639,Office Supplies,Furnishings,Executive Desk,1463.35,5,0.28,-268.88
+269,ORD-937036,02/08/2020,01/06/2020,Second Class,CID-45867,Emma Brown,Consumer,United Kingdom,Phoenix,Texas,10368,East,ITM-700097,Electronics,Appliances,Wireless Keyboard,333.21,5,0.35,-436.98
+270,ORD-519653,02/05/2021,01/09/2020,Same Day,CID-55263,Alice Johnson,Home Office,Canada,Toronto,Florida,63590,East,ITM-393377,Electronics,Appliances,Smartphone X,706.15,3,0.08,158.3
+271,ORD-399532,10/03/2020,01/03/2020,Second Class,CID-76416,Robert Taylor,Corporate,United States,Toronto,Florida,44786,West,ITM-572227,Electronics,Paper,Laser Printer,1185.93,4,0.01,-14.03
+272,ORD-260053,09/01/2021,01/11/2020,Standard Class,CID-11605,Emma Brown,Home Office,Canada,Toronto,Texas,68210,South,ITM-906695,Office Supplies,Chairs,Laser Printer,1014.95,2,0.27,151.7
+273,ORD-645350,07/17/2021,01/08/2020,Same Day,CID-62529,Michael Smith,Corporate,United States,Los Angeles,Texas,31633,South,ITM-826759,Home Essentials,Chairs,Smartphone X,866.53,1,0.23,-290.61
+274,ORD-879129,01/04/2020,01/04/2020,First Class,CID-36735,Alice Johnson,Corporate,United Kingdom,London,Quebec,11861,North,ITM-220881,Home Essentials,Chairs,Noise Cancelling Headphones,1470.1,6,0.15,388.71
+275,ORD-410616,06/28/2021,01/02/2020,Same Day,CID-35580,Emma Brown,Home Office,United Kingdom,London,British Columbia,83067,North,ITM-118163,Furniture,Storage,Office Paper,1100.44,7,0.43,295.72
+276,ORD-361256,09/27/2020,01/05/2020,First Class,CID-22680,Emma Brown,Home Office,United Kingdom,New York,California,94931,Central,ITM-705159,Office Supplies,Binders,Office Paper,85.17,5,0.02,228.24
+277,ORD-798670,02/26/2021,01/04/2020,First Class,CID-12616,Emma Brown,Consumer,United Kingdom,Toronto,British Columbia,43332,East,ITM-558685,Furniture,Chairs,Laser Printer,477.98,8,0.12,-352.19
+278,ORD-175408,03/30/2021,01/11/2020,Same Day,CID-64207,Michael Smith,Corporate,Canada,London,British Columbia,55821,South,ITM-816175,Electronics,Appliances,Filing Cabinet,1082.9,4,0.03,-491.26
+279,ORD-156486,02/11/2020,01/08/2020,Second Class,CID-72982,Robert Taylor,Consumer,United Kingdom,Phoenix,Quebec,54879,East,ITM-900281,Home Essentials,Binders,Laser Printer,1365.2,7,0.48,-86.77
+280,ORD-999634,08/26/2020,01/08/2020,First Class,CID-60728,James Wilson,Corporate,United Kingdom,Toronto,California,26416,Central,ITM-305977,Office Supplies,Chairs,Executive Desk,649.13,10,0.14,-288
+281,ORD-177621,07/14/2020,01/11/2020,Same Day,CID-70949,Emma Brown,Home Office,United Kingdom,New York,Ontario,96363,West,ITM-778548,Home Essentials,Appliances,Smartphone X,99.79,6,0.1,221.41
+282,ORD-235489,01/06/2021,01/06/2020,Same Day,CID-50547,Alice Johnson,Home Office,United States,Los Angeles,New York,32988,South,ITM-990482,Home Essentials,Storage,Noise Cancelling Headphones,177.15,1,0.05,-420.22
+283,ORD-756098,07/19/2021,01/03/2020,Standard Class,CID-88170,Emma Brown,Home Office,United Kingdom,London,Quebec,83922,South,ITM-819231,Furniture,Paper,Noise Cancelling Headphones,782.51,1,0.13,-383.24
+284,ORD-370723,04/09/2021,01/04/2020,Standard Class,CID-55511,Robert Taylor,Home Office,United Kingdom,New York,British Columbia,21193,South,ITM-275272,Furniture,Chairs,Wireless Keyboard,1141.94,7,0.04,-16.18
+285,ORD-166596,01/02/2021,01/10/2020,Standard Class,CID-67999,Emma Brown,Home Office,United Kingdom,Los Angeles,California,96724,West,ITM-583078,Electronics,Chairs,Executive Desk,186.58,7,0.33,159.75
+286,ORD-671265,05/26/2020,01/06/2020,First Class,CID-63018,Alice Johnson,Consumer,United Kingdom,Chicago,Quebec,99396,East,ITM-390152,Home Essentials,Binders,Ergonomic Chair,690.63,7,0.49,-476.1
+287,ORD-982644,11/13/2021,01/10/2020,First Class,CID-52570,Alice Johnson,Consumer,Canada,Houston,Texas,90375,South,ITM-462170,Electronics,Tables,Smartphone X,719.87,5,0.47,357.67
+288,ORD-753070,12/15/2021,01/07/2020,Second Class,CID-53865,Michael Smith,Corporate,United States,London,Texas,67391,West,ITM-456626,Electronics,Furnishings,Noise Cancelling Headphones,1331.62,3,0.35,-224.41
+289,ORD-882285,08/04/2020,01/11/2020,Same Day,CID-40947,Alice Johnson,Home Office,Canada,Toronto,California,62274,South,ITM-943130,Electronics,Chairs,Executive Desk,185.9,7,0.07,30.54
+290,ORD-406912,02/18/2020,01/08/2020,Standard Class,CID-24203,Alice Johnson,Corporate,United Kingdom,Toronto,Texas,55178,East,ITM-430153,Electronics,Phones,Executive Desk,1077.43,3,0.09,-32.05
+291,ORD-915056,07/04/2021,01/02/2020,Standard Class,CID-63908,Alice Johnson,Corporate,United States,Los Angeles,California,14133,Central,ITM-608740,Office Supplies,Appliances,Wireless Keyboard,872.92,8,0.1,-309.95
+292,ORD-170799,12/20/2021,01/11/2020,Second Class,CID-83256,Emma Brown,Home Office,United Kingdom,Chicago,Texas,45351,East,ITM-611537,Furniture,Appliances,Laser Printer,946.25,1,0.16,320.73
+293,ORD-388328,05/21/2021,01/09/2020,Second Class,CID-20504,Olivia Davis,Corporate,United Kingdom,New York,British Columbia,44405,South,ITM-252482,Office Supplies,Appliances,Laser Printer,1418.41,8,0.2,489.11
+294,ORD-995059,04/09/2021,01/06/2020,First Class,CID-40277,Olivia Davis,Corporate,United Kingdom,Toronto,British Columbia,55807,South,ITM-259204,Home Essentials,Furnishings,Executive Desk,401.28,4,0.4,359.2
+295,ORD-554153,10/29/2020,01/02/2020,First Class,CID-82197,Emma Brown,Corporate,United Kingdom,Phoenix,Texas,16244,South,ITM-488111,Electronics,Chairs,Filing Cabinet,395.68,2,0.16,-297.02
+296,ORD-794560,09/19/2021,01/07/2020,Standard Class,CID-82300,Michael Smith,Corporate,United Kingdom,Phoenix,Texas,52080,Central,ITM-137906,Electronics,Binders,Executive Desk,712.75,5,0.49,-273.23
+297,ORD-622246,05/12/2020,01/02/2020,Second Class,CID-59859,Emma Brown,Consumer,Canada,New York,Quebec,90248,North,ITM-813439,Office Supplies,Binders,Ergonomic Chair,1073.68,5,0.45,404.63
+298,ORD-610596,10/15/2020,01/09/2020,Second Class,CID-76919,Olivia Davis,Consumer,United States,London,Quebec,61866,Central,ITM-361940,Home Essentials,Appliances,Laser Printer,852.56,2,0.44,125.51
+299,ORD-550759,09/20/2020,01/07/2020,Standard Class,CID-98434,Robert Taylor,Corporate,Canada,Houston,Texas,60096,North,ITM-739721,Office Supplies,Furnishings,Filing Cabinet,584.81,3,0.05,68.8
+300,ORD-384805,03/07/2020,01/11/2020,Second Class,CID-82715,James Wilson,Corporate,United States,New York,Florida,94359,West,ITM-200505,Home Essentials,Furnishings,Wireless Keyboard,1159.25,8,0.42,259.17
+301,ORD-935727,11/07/2020,01/03/2020,Second Class,CID-99755,James Wilson,Home Office,United Kingdom,Los Angeles,Ontario,48218,North,ITM-984808,Electronics,Phones,Wireless Keyboard,144.78,7,0.43,-393.9
+302,ORD-636345,11/11/2021,01/10/2020,Same Day,CID-32789,Emma Brown,Home Office,United States,London,New York,43205,North,ITM-298214,Home Essentials,Appliances,Office Paper,22.12,9,0.07,43.18
+303,ORD-189883,06/23/2020,01/06/2020,Standard Class,CID-71164,Michael Smith,Corporate,United States,New York,Quebec,97342,East,ITM-691030,Office Supplies,Binders,Filing Cabinet,104.86,8,0.09,424.65
+304,ORD-282434,09/16/2021,01/11/2020,Same Day,CID-98694,Michael Smith,Consumer,United Kingdom,London,Florida,32087,Central,ITM-370198,Office Supplies,Tables,Noise Cancelling Headphones,1272.67,6,0.25,-315.4
+305,ORD-835474,08/16/2021,01/10/2020,Second Class,CID-16626,Emma Brown,Corporate,Canada,Toronto,Florida,16958,South,ITM-554428,Office Supplies,Binders,Laser Printer,660.67,10,0.19,184.62
+306,ORD-311533,01/29/2021,01/11/2020,Same Day,CID-87404,Michael Smith,Home Office,United Kingdom,Toronto,New York,31579,East,ITM-734091,Furniture,Furnishings,Laser Printer,1101.68,5,0.45,-380.6
+307,ORD-268539,12/15/2021,01/03/2020,Same Day,CID-14176,James Wilson,Corporate,United Kingdom,Chicago,Ontario,64036,West,ITM-648954,Office Supplies,Binders,Filing Cabinet,1456.3,4,0.42,437.86
+308,ORD-631931,01/23/2020,01/03/2020,First Class,CID-81523,Michael Smith,Corporate,United Kingdom,Chicago,Florida,21887,Central,ITM-984056,Furniture,Phones,Smartphone X,1211.36,7,0.4,-246.82
+309,ORD-288332,07/06/2021,01/03/2020,First Class,CID-42143,Robert Taylor,Consumer,United Kingdom,New York,New York,36414,Central,ITM-737575,Home Essentials,Storage,Smartphone X,563.8,2,0.04,-498.6
+310,ORD-300843,03/13/2021,01/08/2020,Standard Class,CID-34180,James Wilson,Corporate,United States,Toronto,California,70587,South,ITM-213719,Electronics,Paper,Filing Cabinet,658.47,1,0.29,305.1
+311,ORD-628114,07/29/2021,01/05/2020,Second Class,CID-56556,James Wilson,Corporate,United Kingdom,Phoenix,New York,16926,East,ITM-417201,Office Supplies,Appliances,Filing Cabinet,635.39,6,0.21,-135.53
+312,ORD-526642,12/28/2020,01/04/2020,Second Class,CID-38629,Michael Smith,Corporate,United Kingdom,Houston,Ontario,29040,Central,ITM-111982,Electronics,Chairs,Laser Printer,514.12,7,0.06,-372.93
+313,ORD-341984,11/20/2020,01/10/2020,Second Class,CID-12877,Michael Smith,Consumer,United Kingdom,Los Angeles,Florida,47591,Central,ITM-240858,Furniture,Tables,Ergonomic Chair,61.04,4,0.38,-138.02
+314,ORD-456585,11/13/2020,01/06/2020,Second Class,CID-38823,Robert Taylor,Home Office,Canada,Phoenix,New York,21125,West,ITM-928026,Electronics,Appliances,Smartphone X,1159.43,5,0.08,160.51
+315,ORD-635827,11/30/2021,01/08/2020,First Class,CID-36194,Alice Johnson,Consumer,Canada,Los Angeles,Quebec,97313,West,ITM-603682,Electronics,Chairs,Noise Cancelling Headphones,1387.67,8,0.12,-456.55
+316,ORD-430163,01/05/2020,01/06/2020,Second Class,CID-65155,James Wilson,Consumer,Canada,London,California,52036,West,ITM-267018,Electronics,Chairs,Filing Cabinet,143,4,0.1,343.43
+317,ORD-270842,03/22/2021,01/11/2020,Same Day,CID-46052,James Wilson,Consumer,United Kingdom,Toronto,Texas,94534,North,ITM-399837,Furniture,Tables,Wireless Keyboard,50.42,5,0.33,-48.65
+318,ORD-976434,08/14/2020,01/05/2020,Second Class,CID-94762,Emma Brown,Consumer,Canada,Los Angeles,Texas,50517,North,ITM-883593,Home Essentials,Binders,Wireless Keyboard,185.33,6,0.24,191.41
+319,ORD-256563,10/06/2021,01/07/2020,Second Class,CID-69922,Michael Smith,Home Office,Canada,London,Texas,63072,North,ITM-313946,Electronics,Phones,Noise Cancelling Headphones,1041.02,7,0.12,-297.67
+320,ORD-254808,12/10/2020,01/04/2020,Second Class,CID-41098,Robert Taylor,Corporate,United States,Chicago,Ontario,13681,South,ITM-759612,Electronics,Storage,Wireless Keyboard,698.07,10,0.09,366.24
+321,ORD-531259,09/19/2021,01/02/2020,Same Day,CID-55103,Michael Smith,Corporate,Canada,Phoenix,Quebec,96258,North,ITM-366642,Furniture,Furnishings,Executive Desk,701.76,3,0.28,-48.27
+322,ORD-654644,08/07/2020,01/11/2020,Same Day,CID-30613,Michael Smith,Home Office,Canada,Chicago,Texas,70923,North,ITM-419414,Office Supplies,Tables,Filing Cabinet,252.29,9,0.3,199.24
+323,ORD-426095,01/24/2020,01/04/2020,First Class,CID-38536,James Wilson,Home Office,Canada,Toronto,California,97858,South,ITM-122915,Electronics,Binders,Office Paper,51.77,1,0.28,-165.39
+324,ORD-540774,12/17/2020,01/06/2020,Same Day,CID-58134,Michael Smith,Consumer,United Kingdom,London,California,38628,North,ITM-198943,Furniture,Paper,Noise Cancelling Headphones,30.43,9,0.22,384.31
+325,ORD-995856,07/07/2021,01/04/2020,First Class,CID-58759,Emma Brown,Corporate,Canada,Toronto,Quebec,67455,East,ITM-745122,Electronics,Furnishings,Filing Cabinet,1331.84,3,0.34,-310.81
+326,ORD-704099,04/20/2020,01/02/2020,Second Class,CID-75242,Olivia Davis,Corporate,United States,Los Angeles,Quebec,13434,Central,ITM-472910,Home Essentials,Furnishings,Executive Desk,507.26,9,0.06,-391.18
+327,ORD-288652,11/16/2020,01/03/2020,Second Class,CID-34511,Michael Smith,Corporate,United Kingdom,Houston,Quebec,45527,East,ITM-331668,Home Essentials,Appliances,Filing Cabinet,1473.98,4,0.02,72
+328,ORD-706373,11/10/2021,01/06/2020,Standard Class,CID-37335,Michael Smith,Home Office,United Kingdom,Toronto,Quebec,53638,North,ITM-348558,Furniture,Paper,Filing Cabinet,662.57,1,0.49,154.03
+329,ORD-473486,05/31/2021,01/07/2020,Same Day,CID-60201,Emma Brown,Home Office,United States,London,California,87648,Central,ITM-235427,Home Essentials,Chairs,Smartphone X,847.06,10,0.06,489.63
+330,ORD-764029,12/16/2020,01/11/2020,Standard Class,CID-30639,Michael Smith,Consumer,United Kingdom,Chicago,British Columbia,29167,South,ITM-722561,Home Essentials,Appliances,Ergonomic Chair,922.8,2,0.43,210.71
+331,ORD-309680,09/16/2020,01/11/2020,Standard Class,CID-51207,Alice Johnson,Home Office,United Kingdom,Los Angeles,California,54633,South,ITM-467390,Office Supplies,Furnishings,Noise Cancelling Headphones,1243.88,7,0.43,321.27
+332,ORD-753819,02/10/2020,01/03/2020,Same Day,CID-24569,Olivia Davis,Corporate,Canada,London,Texas,28060,Central,ITM-333248,Home Essentials,Furnishings,Filing Cabinet,530.41,4,0.02,-21
+333,ORD-335410,03/25/2021,01/04/2020,Same Day,CID-16283,Alice Johnson,Home Office,United States,London,Florida,63007,West,ITM-667125,Office Supplies,Storage,Noise Cancelling Headphones,836.42,4,0.21,358.69
+334,ORD-423822,12/14/2021,01/09/2020,Same Day,CID-23072,Emma Brown,Consumer,United Kingdom,Toronto,Florida,84113,North,ITM-327539,Furniture,Appliances,Noise Cancelling Headphones,1310.3,2,0.19,40.43
+335,ORD-226145,09/29/2021,01/07/2020,Same Day,CID-99992,Robert Taylor,Corporate,Canada,Chicago,Quebec,59193,South,ITM-140895,Home Essentials,Binders,Laser Printer,1497.8,1,0.06,-155.54
+336,ORD-484930,10/15/2020,01/11/2020,First Class,CID-27818,Robert Taylor,Home Office,United States,Toronto,Florida,86780,West,ITM-499826,Home Essentials,Furnishings,Smartphone X,938.68,2,0.34,351.37
+337,ORD-858477,02/29/2020,01/11/2020,Second Class,CID-35568,Emma Brown,Corporate,Canada,New York,New York,90794,Central,ITM-739145,Home Essentials,Tables,Smartphone X,1419.7,5,0.16,162.29
+338,ORD-528770,11/25/2021,01/05/2020,First Class,CID-86916,Michael Smith,Corporate,United States,Los Angeles,Texas,37038,East,ITM-695175,Home Essentials,Tables,Office Paper,1393.46,2,0.45,37.12
+339,ORD-655350,10/03/2020,01/07/2020,First Class,CID-64879,Emma Brown,Corporate,United States,Toronto,Ontario,48171,Central,ITM-375603,Office Supplies,Phones,Smartphone X,625.13,9,0.28,-339.35
+340,ORD-383238,05/23/2020,01/05/2020,Second Class,CID-16864,Michael Smith,Consumer,United Kingdom,London,California,14765,South,ITM-253003,Electronics,Storage,Smartphone X,528.87,6,0.15,27.33
+341,ORD-234014,05/30/2020,01/10/2020,Standard Class,CID-32564,Robert Taylor,Corporate,United States,New York,Ontario,29098,East,ITM-981855,Home Essentials,Storage,Noise Cancelling Headphones,926.03,6,0.32,209.2
+342,ORD-950443,12/30/2020,01/08/2020,Same Day,CID-10843,Robert Taylor,Home Office,United Kingdom,New York,Ontario,77045,North,ITM-190106,Office Supplies,Chairs,Laser Printer,493.86,8,0.07,-216.72
+343,ORD-643721,05/11/2021,01/11/2020,Second Class,CID-52665,Robert Taylor,Home Office,United States,Phoenix,New York,92254,East,ITM-314553,Office Supplies,Furnishings,Wireless Keyboard,490.36,6,0.1,334
+344,ORD-420139,05/21/2021,01/02/2020,Standard Class,CID-45927,James Wilson,Home Office,United Kingdom,Chicago,Texas,60047,West,ITM-385127,Home Essentials,Storage,Smartphone X,312.28,5,0.33,-483.82
+345,ORD-139586,04/07/2020,01/09/2020,Second Class,CID-32504,Michael Smith,Home Office,United Kingdom,Toronto,Florida,79732,East,ITM-557494,Office Supplies,Appliances,Smartphone X,1375.34,10,0.2,-221.49
+346,ORD-897362,08/22/2020,01/10/2020,First Class,CID-56966,Alice Johnson,Home Office,United States,London,Florida,57990,West,ITM-292049,Office Supplies,Phones,Laser Printer,1026.03,8,0.23,422.79
+347,ORD-903705,12/25/2021,01/09/2020,Standard Class,CID-67569,Emma Brown,Corporate,Canada,New York,New York,40507,North,ITM-317371,Electronics,Tables,Office Paper,354.82,1,0.32,-219.01
+348,ORD-586955,01/04/2020,01/02/2020,First Class,CID-40678,James Wilson,Corporate,United States,Phoenix,New York,15143,Central,ITM-282127,Furniture,Chairs,Office Paper,880.15,9,0.27,-368.1
+349,ORD-599954,01/09/2020,01/02/2020,Same Day,CID-37749,Michael Smith,Corporate,United Kingdom,Los Angeles,Ontario,10817,Central,ITM-972231,Furniture,Paper,Laser Printer,1171.11,3,0.23,-16.17
+350,ORD-172567,03/23/2021,01/05/2020,First Class,CID-28572,Robert Taylor,Home Office,United States,Chicago,Ontario,12526,North,ITM-809354,Furniture,Paper,Noise Cancelling Headphones,1018.11,6,0.36,-72.21
+351,ORD-569780,02/09/2020,01/09/2020,Standard Class,CID-95858,Olivia Davis,Consumer,United Kingdom,Los Angeles,Ontario,47736,South,ITM-743222,Office Supplies,Binders,Laser Printer,743.49,9,0.14,-490.13
+352,ORD-608855,05/09/2020,01/07/2020,First Class,CID-83630,Alice Johnson,Consumer,Canada,Houston,Ontario,19323,Central,ITM-200882,Furniture,Paper,Smartphone X,625.65,9,0.04,-321.38
+353,ORD-978670,05/12/2020,01/09/2020,Second Class,CID-53739,Emma Brown,Corporate,Canada,Toronto,New York,34945,Central,ITM-288885,Electronics,Binders,Smartphone X,88.29,3,0.09,211.46
+354,ORD-726523,05/28/2021,01/09/2020,First Class,CID-16386,Michael Smith,Home Office,United Kingdom,Toronto,Florida,25670,West,ITM-433682,Furniture,Phones,Smartphone X,1321.51,9,0.18,-350.85
+355,ORD-669730,02/24/2021,01/08/2020,Standard Class,CID-40607,Robert Taylor,Home Office,United States,Chicago,Texas,38867,East,ITM-426854,Furniture,Appliances,Smartphone X,419.94,6,0.41,269.62
+356,ORD-578316,10/05/2021,01/03/2020,Standard Class,CID-12080,James Wilson,Home Office,United Kingdom,New York,Florida,58668,Central,ITM-666613,Office Supplies,Phones,Filing Cabinet,362.96,10,0.17,-128.44
+357,ORD-555515,02/20/2021,01/03/2020,Second Class,CID-15241,Alice Johnson,Corporate,United States,Los Angeles,Quebec,73242,East,ITM-496187,Electronics,Binders,Filing Cabinet,425.38,1,0.06,-164.21
+358,ORD-528884,01/30/2020,01/06/2020,First Class,CID-75559,Emma Brown,Home Office,United States,Chicago,Texas,27314,East,ITM-141328,Office Supplies,Paper,Smartphone X,455.91,5,0.02,185.02
+359,ORD-881206,12/03/2020,01/05/2020,Second Class,CID-67267,Robert Taylor,Corporate,United Kingdom,Toronto,Texas,44611,West,ITM-517984,Furniture,Paper,Wireless Keyboard,113.22,7,0.25,-370.97
+360,ORD-527738,10/13/2020,01/05/2020,Second Class,CID-51158,James Wilson,Consumer,Canada,Los Angeles,Texas,29057,North,ITM-399631,Office Supplies,Furnishings,Executive Desk,634.91,3,0.14,-321.77
+361,ORD-966508,07/15/2020,01/03/2020,Same Day,CID-99367,Olivia Davis,Consumer,United Kingdom,London,Florida,16446,West,ITM-225829,Home Essentials,Chairs,Wireless Keyboard,1069.21,2,0.02,194.84
+362,ORD-441875,07/22/2021,01/06/2020,Second Class,CID-40738,Michael Smith,Corporate,United States,Houston,British Columbia,33191,East,ITM-321135,Electronics,Binders,Office Paper,518.24,9,0.05,191.74
+363,ORD-157383,05/31/2020,01/02/2020,First Class,CID-90741,Olivia Davis,Consumer,Canada,Chicago,Texas,71700,South,ITM-115847,Electronics,Paper,Wireless Keyboard,1239.53,2,0.33,96.95
+364,ORD-453983,05/25/2021,01/08/2020,First Class,CID-68082,James Wilson,Home Office,United States,Chicago,Florida,57250,West,ITM-156543,Furniture,Binders,Wireless Keyboard,533.42,8,0.01,386.47
+365,ORD-357750,11/10/2020,01/07/2020,Standard Class,CID-46692,James Wilson,Home Office,Canada,Chicago,California,17640,West,ITM-118052,Home Essentials,Chairs,Noise Cancelling Headphones,588.55,7,0.07,-488.11
+366,ORD-575291,12/27/2020,01/06/2020,Second Class,CID-77320,James Wilson,Corporate,Canada,Toronto,California,34883,Central,ITM-271529,Home Essentials,Phones,Wireless Keyboard,309.26,5,0.26,-252.32
+367,ORD-627556,04/09/2021,01/02/2020,Second Class,CID-70223,Alice Johnson,Home Office,United Kingdom,Houston,Quebec,88988,South,ITM-568758,Furniture,Binders,Noise Cancelling Headphones,1187.33,3,0.38,138.07
+368,ORD-530085,07/05/2021,01/02/2020,Standard Class,CID-50770,Olivia Davis,Corporate,Canada,New York,Ontario,58703,West,ITM-666032,Furniture,Paper,Wireless Keyboard,910.95,5,0.42,272.98
+369,ORD-965749,04/03/2021,01/04/2020,Standard Class,CID-71340,Emma Brown,Corporate,Canada,London,Ontario,25992,East,ITM-284656,Furniture,Chairs,Wireless Keyboard,1412.26,9,0.42,-226.74
+370,ORD-418433,01/29/2021,01/10/2020,Second Class,CID-14461,Robert Taylor,Corporate,United Kingdom,Los Angeles,Florida,43724,West,ITM-787745,Electronics,Chairs,Filing Cabinet,647.91,1,0.19,-115.88
+371,ORD-979579,12/25/2020,01/05/2020,Same Day,CID-13333,Emma Brown,Home Office,Canada,Toronto,Quebec,19300,South,ITM-354393,Home Essentials,Furnishings,Filing Cabinet,1026.68,2,0.48,158.46
+372,ORD-757670,01/31/2020,01/06/2020,Same Day,CID-68404,Olivia Davis,Corporate,Canada,New York,Ontario,18555,East,ITM-870631,Home Essentials,Storage,Filing Cabinet,763.51,6,0.06,-33.7
+373,ORD-372361,03/26/2021,01/10/2020,Standard Class,CID-16926,Emma Brown,Corporate,United Kingdom,Houston,Quebec,78602,Central,ITM-643899,Furniture,Phones,Noise Cancelling Headphones,301.87,2,0.14,491.72
+374,ORD-584301,11/07/2020,01/08/2020,First Class,CID-83676,James Wilson,Corporate,Canada,New York,British Columbia,85226,North,ITM-345368,Home Essentials,Appliances,Noise Cancelling Headphones,1377.62,10,0.32,-100.11
+375,ORD-555333,08/10/2021,01/04/2020,Second Class,CID-35586,Emma Brown,Corporate,United States,Chicago,Florida,52608,South,ITM-338113,Home Essentials,Storage,Smartphone X,373.32,3,0.19,-351.44
+376,ORD-386833,11/03/2020,01/07/2020,Second Class,CID-41263,Michael Smith,Consumer,United States,New York,Ontario,84001,South,ITM-747189,Furniture,Paper,Executive Desk,913.89,5,0.11,-406.37
+377,ORD-657064,04/26/2020,01/06/2020,Standard Class,CID-59844,Michael Smith,Corporate,United Kingdom,Los Angeles,Florida,89389,West,ITM-519244,Furniture,Chairs,Executive Desk,433.08,10,0.39,103.06
+378,ORD-299939,10/17/2021,01/10/2020,First Class,CID-23300,Robert Taylor,Home Office,United Kingdom,Phoenix,Texas,82690,North,ITM-687347,Furniture,Appliances,Smartphone X,568.01,10,0.05,-183.8
+379,ORD-677903,06/17/2020,01/08/2020,Standard Class,CID-25301,Michael Smith,Consumer,United States,New York,Florida,43568,East,ITM-897196,Home Essentials,Appliances,Office Paper,1085.13,6,0.19,83.63
+380,ORD-700572,04/25/2021,01/07/2020,Same Day,CID-19046,Robert Taylor,Consumer,United Kingdom,Toronto,British Columbia,62134,South,ITM-225270,Home Essentials,Furnishings,Ergonomic Chair,745.18,1,0.5,212.09
+381,ORD-442482,11/14/2021,01/10/2020,First Class,CID-46015,Michael Smith,Home Office,Canada,Toronto,New York,57287,Central,ITM-941853,Furniture,Tables,Noise Cancelling Headphones,156.14,8,0.45,330.34
+382,ORD-481732,03/17/2020,01/06/2020,Same Day,CID-41320,Emma Brown,Consumer,Canada,London,California,22595,Central,ITM-329786,Furniture,Storage,Office Paper,741.46,1,0.4,-469.14
+383,ORD-511243,06/27/2020,01/08/2020,Second Class,CID-39808,Alice Johnson,Home Office,United Kingdom,London,California,76947,North,ITM-356215,Electronics,Phones,Office Paper,472.5,7,0.24,-295.5
+384,ORD-744129,07/17/2020,01/09/2020,Standard Class,CID-81021,Emma Brown,Home Office,United Kingdom,London,British Columbia,85079,Central,ITM-894544,Home Essentials,Tables,Executive Desk,471.23,3,0.15,131.89
+385,ORD-140177,08/22/2021,01/09/2020,First Class,CID-36973,Alice Johnson,Home Office,United States,Phoenix,California,35677,North,ITM-384390,Office Supplies,Paper,Laser Printer,219.26,5,0.12,-31.09
+386,ORD-225007,04/23/2021,01/02/2020,Second Class,CID-91033,Alice Johnson,Corporate,United States,Houston,New York,70260,South,ITM-192638,Electronics,Appliances,Filing Cabinet,270.45,8,0.09,-489.79
+387,ORD-780231,07/21/2020,01/11/2020,Same Day,CID-15592,Alice Johnson,Corporate,United States,New York,British Columbia,98227,North,ITM-500589,Office Supplies,Tables,Wireless Keyboard,1100,1,0.16,158.8
+388,ORD-333501,03/12/2021,01/04/2020,Standard Class,CID-58120,Robert Taylor,Home Office,Canada,Chicago,Ontario,56237,West,ITM-939148,Office Supplies,Binders,Smartphone X,1472.15,4,0.19,-266.54
+389,ORD-849620,10/10/2021,01/09/2020,Same Day,CID-81183,James Wilson,Corporate,United Kingdom,Houston,British Columbia,21905,North,ITM-517095,Office Supplies,Chairs,Ergonomic Chair,96.46,4,0.31,354.88
+390,ORD-534412,07/16/2020,01/06/2020,Second Class,CID-82980,Emma Brown,Consumer,United Kingdom,Phoenix,Quebec,88934,South,ITM-557790,Home Essentials,Storage,Ergonomic Chair,33.86,9,0.27,-256
+391,ORD-585377,09/01/2020,01/08/2020,Standard Class,CID-23380,Olivia Davis,Corporate,United Kingdom,New York,Quebec,96421,East,ITM-378896,Furniture,Binders,Laser Printer,956.95,7,0.49,437.65
+392,ORD-762802,09/04/2020,01/07/2020,Same Day,CID-26070,Olivia Davis,Corporate,Canada,Toronto,Quebec,47323,Central,ITM-546838,Home Essentials,Appliances,Smartphone X,448.42,2,0.05,-386.01
+393,ORD-445309,04/18/2021,01/09/2020,Standard Class,CID-71543,Alice Johnson,Home Office,Canada,Los Angeles,Texas,64210,Central,ITM-384133,Home Essentials,Chairs,Smartphone X,473.49,10,0.28,-344.92
+394,ORD-405928,08/12/2021,01/02/2020,Same Day,CID-12017,Robert Taylor,Corporate,United States,Toronto,Florida,96665,East,ITM-428765,Office Supplies,Tables,Laser Printer,920.89,7,0.35,450.63
+395,ORD-739660,08/03/2021,01/02/2020,Standard Class,CID-94846,Robert Taylor,Corporate,Canada,Toronto,British Columbia,56856,Central,ITM-658908,Furniture,Chairs,Filing Cabinet,489.98,1,0.21,-89.85
+396,ORD-286249,07/30/2021,01/02/2020,Second Class,CID-47496,Emma Brown,Corporate,United Kingdom,Los Angeles,Ontario,76896,East,ITM-649584,Furniture,Phones,Office Paper,1370.71,2,0.36,32.97
+397,ORD-391137,03/22/2021,01/02/2020,First Class,CID-72511,Olivia Davis,Consumer,United Kingdom,Phoenix,California,66509,Central,ITM-295333,Office Supplies,Phones,Smartphone X,80.5,8,0.07,84.37
+398,ORD-180250,09/01/2020,01/05/2020,First Class,CID-13441,Michael Smith,Consumer,United Kingdom,Houston,Texas,56896,Central,ITM-401821,Home Essentials,Appliances,Wireless Keyboard,213.18,3,0.1,-10.65
+399,ORD-834237,08/28/2020,01/02/2020,Standard Class,CID-39014,Michael Smith,Home Office,Canada,Chicago,British Columbia,86677,North,ITM-823315,Home Essentials,Storage,Filing Cabinet,898.67,8,0.08,-492.62
+400,ORD-371380,09/18/2021,01/02/2020,First Class,CID-21990,Robert Taylor,Corporate,Canada,Phoenix,New York,63274,West,ITM-467623,Electronics,Storage,Filing Cabinet,852.21,10,0.24,-345.27
+401,ORD-445521,08/29/2021,01/04/2020,Second Class,CID-68006,Michael Smith,Home Office,United Kingdom,Toronto,Ontario,81297,Central,ITM-422353,Electronics,Appliances,Smartphone X,602.94,3,0.42,68.95
+402,ORD-739402,05/02/2021,01/07/2020,Second Class,CID-92658,Emma Brown,Home Office,United States,Los Angeles,Ontario,54229,West,ITM-177057,Home Essentials,Tables,Ergonomic Chair,1235.07,9,0.25,468.59
+403,ORD-702275,08/19/2020,01/10/2020,Standard Class,CID-70831,Emma Brown,Home Office,Canada,Houston,Florida,64325,Central,ITM-893480,Electronics,Appliances,Wireless Keyboard,164.9,4,0.1,308.05
+404,ORD-951791,12/02/2020,01/06/2020,First Class,CID-22701,James Wilson,Consumer,United States,Toronto,Quebec,16241,Central,ITM-278170,Furniture,Paper,Noise Cancelling Headphones,1053.11,9,0.31,34.5
+405,ORD-664546,09/24/2021,01/08/2020,Second Class,CID-69108,Michael Smith,Consumer,Canada,Chicago,New York,98330,South,ITM-402064,Furniture,Storage,Ergonomic Chair,846.4,3,0.45,-181.6
+406,ORD-364845,03/10/2020,01/10/2020,Second Class,CID-93575,Robert Taylor,Home Office,United States,Houston,Texas,89945,East,ITM-262485,Home Essentials,Furnishings,Ergonomic Chair,685.9,6,0.35,498.38
+407,ORD-821437,07/11/2020,01/04/2020,Same Day,CID-96371,Michael Smith,Home Office,Canada,Houston,Florida,49764,North,ITM-395289,Office Supplies,Appliances,Wireless Keyboard,908.32,5,0.02,197.9
+408,ORD-505386,04/24/2020,01/10/2020,Second Class,CID-17167,James Wilson,Home Office,United States,New York,Florida,80504,North,ITM-428328,Electronics,Furnishings,Laser Printer,1094.55,4,0.03,145.31
+409,ORD-954862,03/14/2021,01/10/2020,Standard Class,CID-61371,Michael Smith,Consumer,Canada,Phoenix,Ontario,57084,Central,ITM-575508,Electronics,Chairs,Filing Cabinet,1201.54,1,0.24,173.24
+410,ORD-216813,10/11/2020,01/07/2020,Standard Class,CID-41301,James Wilson,Consumer,United States,Phoenix,California,45863,South,ITM-407494,Electronics,Appliances,Noise Cancelling Headphones,352.91,4,0.26,390.58
+411,ORD-647029,07/15/2020,01/05/2020,Second Class,CID-79129,Robert Taylor,Home Office,Canada,Chicago,Texas,10003,North,ITM-162604,Furniture,Chairs,Executive Desk,1267.09,4,0.03,-235.37
+412,ORD-310293,12/14/2020,01/10/2020,Same Day,CID-37993,Michael Smith,Home Office,United States,New York,Florida,13708,East,ITM-201088,Home Essentials,Appliances,Filing Cabinet,694.93,10,0.47,52.77
+413,ORD-137517,12/22/2021,01/11/2020,Second Class,CID-27414,James Wilson,Home Office,Canada,Chicago,Texas,86028,South,ITM-368615,Furniture,Paper,Office Paper,43.95,7,0.13,-190.31
+414,ORD-960551,08/02/2020,01/02/2020,Standard Class,CID-89825,Olivia Davis,Home Office,United States,Toronto,California,33197,East,ITM-581653,Office Supplies,Phones,Laser Printer,649.31,5,0.47,386.74
+415,ORD-837212,09/23/2020,01/07/2020,Standard Class,CID-32041,Michael Smith,Consumer,Canada,Houston,Texas,32027,Central,ITM-388466,Home Essentials,Furnishings,Office Paper,648.96,6,0.16,459.85
+416,ORD-518953,11/17/2021,01/05/2020,Second Class,CID-43667,Alice Johnson,Corporate,United States,New York,Quebec,97012,South,ITM-586683,Home Essentials,Binders,Wireless Keyboard,245.25,8,0.2,-359.81
+417,ORD-149679,05/08/2021,01/02/2020,Standard Class,CID-38613,Alice Johnson,Corporate,United States,Houston,California,83469,North,ITM-665012,Office Supplies,Tables,Filing Cabinet,431.11,3,0.44,-121.79
+418,ORD-581639,01/13/2021,01/11/2020,Second Class,CID-37976,Alice Johnson,Home Office,Canada,Toronto,California,85882,West,ITM-779305,Electronics,Paper,Wireless Keyboard,157.9,7,0.05,-386.2
+419,ORD-533858,02/01/2020,01/05/2020,Same Day,CID-40753,Alice Johnson,Consumer,United Kingdom,Los Angeles,Ontario,78253,Central,ITM-163225,Electronics,Appliances,Laser Printer,1395.07,5,0.26,-385.47
+420,ORD-541787,12/06/2021,01/05/2020,Same Day,CID-86358,Alice Johnson,Corporate,Canada,Phoenix,Quebec,41518,Central,ITM-483861,Office Supplies,Chairs,Laser Printer,395.32,10,0.11,371.74
+421,ORD-761210,11/06/2020,01/07/2020,Second Class,CID-68410,Robert Taylor,Corporate,United Kingdom,London,Ontario,91216,West,ITM-448729,Office Supplies,Storage,Executive Desk,651.85,3,0.33,-168.75
+422,ORD-498031,01/04/2021,01/05/2020,Same Day,CID-42633,Alice Johnson,Home Office,United Kingdom,Phoenix,Texas,33141,Central,ITM-841112,Office Supplies,Chairs,Ergonomic Chair,545.27,8,0.35,-35.77
+423,ORD-594202,11/28/2021,01/06/2020,Same Day,CID-17749,James Wilson,Corporate,United Kingdom,Houston,California,87928,North,ITM-601352,Office Supplies,Furnishings,Smartphone X,32,3,0.46,225.86
+424,ORD-484291,01/14/2021,01/10/2020,Same Day,CID-55829,Emma Brown,Corporate,United Kingdom,London,Quebec,48998,South,ITM-309495,Electronics,Appliances,Office Paper,701.74,9,0.2,497.42
+425,ORD-548086,03/30/2021,01/05/2020,Second Class,CID-62922,James Wilson,Home Office,United States,New York,Ontario,89620,West,ITM-731377,Electronics,Paper,Executive Desk,406.16,10,0.44,-97.78
+426,ORD-374765,08/11/2021,01/08/2020,Second Class,CID-16110,Robert Taylor,Consumer,Canada,Chicago,Ontario,73591,West,ITM-402657,Office Supplies,Binders,Smartphone X,1108.28,2,0.49,-265.96
+427,ORD-127265,08/21/2021,01/11/2020,First Class,CID-11523,Michael Smith,Consumer,United States,London,British Columbia,94382,North,ITM-695586,Electronics,Tables,Smartphone X,460.94,7,0.36,-183.66
+428,ORD-772589,01/13/2021,01/08/2020,First Class,CID-30381,Robert Taylor,Home Office,United States,Phoenix,Florida,20432,North,ITM-120935,Electronics,Appliances,Executive Desk,839.54,1,0.08,479.87
+429,ORD-747163,04/02/2020,01/04/2020,First Class,CID-89360,Michael Smith,Corporate,United States,Houston,California,22448,North,ITM-995855,Home Essentials,Storage,Wireless Keyboard,1496.28,8,0.17,-69.46
+430,ORD-164963,10/12/2020,01/11/2020,Second Class,CID-54676,Michael Smith,Corporate,Canada,Phoenix,Texas,28641,West,ITM-129850,Furniture,Storage,Office Paper,14.82,2,0.17,272.37
+431,ORD-557359,03/27/2021,01/04/2020,Same Day,CID-30806,Robert Taylor,Home Office,Canada,Los Angeles,California,77020,North,ITM-939789,Home Essentials,Appliances,Executive Desk,1405.01,6,0.24,-149.96
+432,ORD-469155,12/20/2021,01/03/2020,Second Class,CID-17891,James Wilson,Consumer,Canada,London,New York,79475,North,ITM-865682,Electronics,Phones,Office Paper,1390.89,9,0.1,493.49
+433,ORD-496162,07/20/2021,01/11/2020,First Class,CID-75414,Michael Smith,Consumer,United Kingdom,London,Quebec,39485,North,ITM-230811,Electronics,Binders,Noise Cancelling Headphones,985.47,4,0.25,-187.29
+434,ORD-714724,10/20/2021,01/09/2020,First Class,CID-94276,Emma Brown,Home Office,United States,Phoenix,New York,29889,South,ITM-261637,Office Supplies,Tables,Ergonomic Chair,933.48,10,0.03,316.37
+435,ORD-780663,07/06/2020,01/04/2020,Second Class,CID-96626,Olivia Davis,Home Office,Canada,Phoenix,British Columbia,16122,North,ITM-713399,Furniture,Chairs,Office Paper,1302.21,5,0.2,-318.3
+436,ORD-341784,06/02/2021,01/11/2020,First Class,CID-60874,Olivia Davis,Corporate,United States,Toronto,Texas,60141,Central,ITM-685529,Office Supplies,Storage,Wireless Keyboard,63.24,2,0.1,230.47
+437,ORD-916741,07/20/2021,01/11/2020,Standard Class,CID-58250,Olivia Davis,Consumer,Canada,Houston,Florida,58178,East,ITM-825277,Home Essentials,Chairs,Wireless Keyboard,110.03,8,0.07,476.51
+438,ORD-776231,07/15/2020,01/11/2020,Standard Class,CID-43288,Alice Johnson,Consumer,United Kingdom,Phoenix,Quebec,33554,West,ITM-370638,Electronics,Chairs,Office Paper,425.22,6,0.3,201.77
+439,ORD-904637,12/02/2020,01/09/2020,Same Day,CID-22148,James Wilson,Home Office,United Kingdom,Chicago,New York,36731,West,ITM-561999,Home Essentials,Paper,Office Paper,1019.55,10,0.32,-346.46
+440,ORD-994018,08/16/2021,01/06/2020,First Class,CID-52369,Emma Brown,Corporate,United Kingdom,Phoenix,Florida,56123,South,ITM-894688,Office Supplies,Paper,Noise Cancelling Headphones,962.27,8,0.45,468.01
+441,ORD-704155,08/02/2021,01/04/2020,Standard Class,CID-74589,Olivia Davis,Home Office,United States,Phoenix,California,98096,North,ITM-265446,Electronics,Furnishings,Laser Printer,707.44,8,0.28,-373.2
+442,ORD-220765,07/07/2021,01/10/2020,Standard Class,CID-61274,Robert Taylor,Consumer,United States,Toronto,British Columbia,63681,Central,ITM-905175,Furniture,Appliances,Executive Desk,204.48,6,0.47,132.11
+443,ORD-490997,08/10/2020,01/08/2020,Second Class,CID-84756,Robert Taylor,Corporate,United Kingdom,Toronto,Ontario,34046,West,ITM-984545,Home Essentials,Appliances,Filing Cabinet,1228.36,8,0.23,-440.1
+444,ORD-794919,02/06/2021,01/06/2020,First Class,CID-94816,Robert Taylor,Corporate,United Kingdom,London,Florida,40703,South,ITM-492023,Furniture,Furnishings,Filing Cabinet,991.91,1,0.43,-447.47
+445,ORD-657946,02/03/2021,01/03/2020,Second Class,CID-98660,Robert Taylor,Corporate,United Kingdom,New York,California,69182,Central,ITM-200660,Electronics,Furnishings,Filing Cabinet,1490.18,5,0.01,144.93
+446,ORD-267626,07/14/2020,01/07/2020,Standard Class,CID-62201,Robert Taylor,Corporate,United States,Houston,British Columbia,24487,East,ITM-930921,Office Supplies,Binders,Wireless Keyboard,584.17,1,0.18,273.2
+447,ORD-391264,05/26/2020,01/08/2020,Same Day,CID-83229,Michael Smith,Corporate,Canada,Los Angeles,New York,84997,South,ITM-187059,Electronics,Paper,Laser Printer,14.87,1,0.18,-433.89
+448,ORD-193936,06/04/2020,01/02/2020,Standard Class,CID-65074,Olivia Davis,Consumer,United Kingdom,London,British Columbia,92198,Central,ITM-676273,Furniture,Furnishings,Ergonomic Chair,1235.14,4,0.01,460.47
+449,ORD-516158,07/26/2020,01/05/2020,Second Class,CID-29933,Olivia Davis,Corporate,United Kingdom,Chicago,California,35146,West,ITM-498305,Furniture,Appliances,Smartphone X,482.6,9,0.24,-444.34
+450,ORD-228671,05/14/2021,01/04/2020,Same Day,CID-83028,James Wilson,Consumer,United Kingdom,Phoenix,British Columbia,50770,West,ITM-519774,Home Essentials,Furnishings,Noise Cancelling Headphones,1068.41,4,0.17,-193.44
+451,ORD-224660,12/17/2020,01/06/2020,Standard Class,CID-85195,Olivia Davis,Home Office,Canada,Phoenix,Florida,12606,North,ITM-469933,Home Essentials,Paper,Office Paper,503.15,10,0.42,-393.21
+452,ORD-837112,01/28/2020,01/09/2020,First Class,CID-31197,Michael Smith,Corporate,United States,Phoenix,Texas,63715,West,ITM-799872,Electronics,Appliances,Ergonomic Chair,1231.49,2,0.06,448.38
+453,ORD-804099,07/05/2020,01/11/2020,Standard Class,CID-28689,Robert Taylor,Corporate,Canada,New York,Quebec,17065,North,ITM-685788,Home Essentials,Appliances,Filing Cabinet,1272.74,4,0.13,93.99
+454,ORD-573680,10/24/2020,01/09/2020,Standard Class,CID-40119,Robert Taylor,Corporate,United States,Chicago,Texas,29758,North,ITM-472724,Home Essentials,Furnishings,Laser Printer,526.31,4,0.04,161.05
+455,ORD-254037,01/28/2021,01/02/2020,First Class,CID-56312,Alice Johnson,Consumer,United Kingdom,Los Angeles,California,15205,East,ITM-384118,Home Essentials,Tables,Laser Printer,580.96,10,0.09,385.24
+456,ORD-628301,03/18/2020,01/11/2020,First Class,CID-81834,Michael Smith,Consumer,Canada,Houston,Ontario,53521,East,ITM-666464,Electronics,Storage,Filing Cabinet,56.47,9,0.3,223.46
+457,ORD-936945,05/01/2021,01/06/2020,Same Day,CID-13396,Robert Taylor,Corporate,United Kingdom,Toronto,Ontario,18274,South,ITM-592772,Furniture,Paper,Smartphone X,245.88,6,0.18,-180.74
+458,ORD-407338,02/26/2021,01/08/2020,Standard Class,CID-27672,Robert Taylor,Home Office,Canada,Toronto,New York,45545,North,ITM-154879,Furniture,Binders,Noise Cancelling Headphones,235.21,10,0.19,-238.85
+459,ORD-249484,03/06/2021,01/11/2020,Second Class,CID-66977,James Wilson,Consumer,United States,Houston,Quebec,23493,North,ITM-911012,Electronics,Phones,Filing Cabinet,313.29,10,0.08,270.57
+460,ORD-113016,09/18/2020,01/07/2020,Second Class,CID-13162,Michael Smith,Corporate,United Kingdom,New York,New York,81548,North,ITM-572601,Electronics,Binders,Wireless Keyboard,1106.65,9,0.09,-3.21
+461,ORD-536617,09/30/2020,01/07/2020,Standard Class,CID-77642,James Wilson,Corporate,United States,Chicago,Florida,97054,West,ITM-317362,Home Essentials,Phones,Office Paper,1115.78,9,0.38,-76.01
+462,ORD-559844,05/23/2020,01/04/2020,First Class,CID-63826,Alice Johnson,Consumer,Canada,New York,British Columbia,92870,Central,ITM-308643,Electronics,Paper,Filing Cabinet,324.23,7,0.4,-489.77
+463,ORD-326464,01/18/2021,01/07/2020,First Class,CID-65694,James Wilson,Corporate,Canada,Houston,Texas,53871,Central,ITM-827100,Office Supplies,Chairs,Executive Desk,649.76,2,0.44,-358.71
+464,ORD-483195,11/26/2021,01/03/2020,First Class,CID-88277,Alice Johnson,Home Office,United Kingdom,Los Angeles,British Columbia,12861,South,ITM-936045,Furniture,Appliances,Ergonomic Chair,619.72,3,0.48,467.59
+465,ORD-456253,09/14/2020,01/03/2020,First Class,CID-55675,Michael Smith,Home Office,United States,Chicago,California,90249,West,ITM-134201,Home Essentials,Chairs,Noise Cancelling Headphones,733.6,9,0.4,56.48
+466,ORD-250901,05/28/2020,01/07/2020,First Class,CID-97238,Olivia Davis,Consumer,Canada,Los Angeles,Quebec,75752,West,ITM-481274,Electronics,Phones,Noise Cancelling Headphones,108.99,6,0.02,401.1
+467,ORD-726708,09/08/2020,01/07/2020,Standard Class,CID-20339,Olivia Davis,Consumer,Canada,New York,New York,22018,Central,ITM-964935,Furniture,Binders,Filing Cabinet,83.29,10,0.06,252.86
+468,ORD-728075,08/22/2020,01/10/2020,Same Day,CID-98792,Emma Brown,Consumer,Canada,Toronto,British Columbia,40259,South,ITM-940002,Furniture,Furnishings,Noise Cancelling Headphones,910.36,7,0.09,-382.58
+469,ORD-239296,05/09/2020,01/10/2020,Second Class,CID-72534,Alice Johnson,Home Office,Canada,Chicago,Florida,33179,West,ITM-144191,Office Supplies,Tables,Noise Cancelling Headphones,1038.41,7,0.13,282.22
+470,ORD-668430,09/12/2021,01/08/2020,Standard Class,CID-72255,Olivia Davis,Home Office,United States,Phoenix,British Columbia,38043,East,ITM-724017,Furniture,Storage,Ergonomic Chair,708.68,7,0.19,-428.01
+471,ORD-632917,11/14/2021,01/02/2020,Second Class,CID-68392,Robert Taylor,Corporate,Canada,Houston,Quebec,94732,West,ITM-919029,Home Essentials,Phones,Filing Cabinet,923.69,1,0.11,-434.17
+472,ORD-759625,02/12/2021,01/11/2020,Second Class,CID-39925,Alice Johnson,Consumer,Canada,Phoenix,New York,36189,West,ITM-191819,Office Supplies,Storage,Office Paper,57.57,6,0.44,78.43
+473,ORD-252804,02/27/2021,01/05/2020,Second Class,CID-69092,Michael Smith,Home Office,United States,Los Angeles,Quebec,79029,South,ITM-453435,Office Supplies,Paper,Wireless Keyboard,61.69,2,0.02,77.67
+474,ORD-946743,10/23/2020,01/05/2020,First Class,CID-28904,Alice Johnson,Home Office,Canada,London,Quebec,98659,North,ITM-738006,Office Supplies,Furnishings,Ergonomic Chair,1046.75,3,0.14,-34.2
+475,ORD-177745,09/13/2020,01/02/2020,Standard Class,CID-80161,Alice Johnson,Corporate,Canada,Chicago,British Columbia,74197,West,ITM-121997,Home Essentials,Storage,Noise Cancelling Headphones,1159.51,4,0.12,144.98
+476,ORD-779392,02/15/2020,01/03/2020,Second Class,CID-10722,Emma Brown,Corporate,United Kingdom,Houston,Texas,73360,West,ITM-374162,Furniture,Storage,Filing Cabinet,1324.06,7,0.21,-141.59
+477,ORD-544089,11/04/2021,01/03/2020,Second Class,CID-95000,Alice Johnson,Consumer,Canada,Toronto,California,65977,North,ITM-250669,Home Essentials,Furnishings,Smartphone X,1429.94,2,0.38,-431.18
+478,ORD-217542,12/04/2021,01/03/2020,Same Day,CID-32568,Alice Johnson,Corporate,United Kingdom,Phoenix,Texas,93038,East,ITM-754736,Home Essentials,Storage,Ergonomic Chair,1346.48,3,0.38,-321.4
+479,ORD-254603,10/22/2020,01/07/2020,Same Day,CID-61508,Robert Taylor,Home Office,United States,New York,New York,93881,North,ITM-161170,Furniture,Paper,Noise Cancelling Headphones,84.63,4,0.01,401.07
+480,ORD-997193,02/09/2020,01/08/2020,Second Class,CID-90142,Robert Taylor,Consumer,Canada,Chicago,British Columbia,51801,South,ITM-182212,Electronics,Storage,Ergonomic Chair,950.59,1,0.18,415.85
+481,ORD-957801,07/15/2020,01/03/2020,Second Class,CID-63517,James Wilson,Consumer,Canada,Toronto,California,60654,Central,ITM-957409,Home Essentials,Chairs,Filing Cabinet,42.7,4,0.31,-265.58
+482,ORD-191795,12/12/2021,01/10/2020,Second Class,CID-98093,Olivia Davis,Consumer,Canada,Phoenix,Florida,66294,Central,ITM-640217,Furniture,Paper,Ergonomic Chair,1231.48,2,0.4,397.26
+483,ORD-637182,11/20/2020,01/09/2020,Standard Class,CID-98346,Michael Smith,Home Office,United States,London,Texas,15778,East,ITM-462096,Office Supplies,Chairs,Laser Printer,10.67,5,0.22,113.66
+484,ORD-250905,02/12/2020,01/11/2020,Standard Class,CID-21525,Emma Brown,Consumer,United Kingdom,Los Angeles,Florida,48636,West,ITM-274882,Home Essentials,Chairs,Ergonomic Chair,461.26,6,0.38,224.14
+485,ORD-355315,01/12/2020,01/03/2020,First Class,CID-80139,Michael Smith,Home Office,Canada,Houston,California,45307,South,ITM-600090,Office Supplies,Phones,Filing Cabinet,1272.74,6,0.19,-264.86
+486,ORD-313699,10/08/2021,01/11/2020,Standard Class,CID-94556,James Wilson,Home Office,United Kingdom,Phoenix,British Columbia,88586,East,ITM-332763,Electronics,Paper,Filing Cabinet,1362.05,3,0.39,421.57
+487,ORD-475402,03/02/2021,01/06/2020,Standard Class,CID-51296,James Wilson,Corporate,Canada,London,Florida,76847,West,ITM-457871,Electronics,Binders,Smartphone X,541.98,4,0.4,189.66
+488,ORD-234112,04/28/2021,01/07/2020,First Class,CID-67474,Emma Brown,Corporate,United Kingdom,Los Angeles,New York,59439,South,ITM-604827,Home Essentials,Phones,Office Paper,625.67,8,0.21,-23.48
+489,ORD-766837,10/24/2020,01/10/2020,First Class,CID-95045,Emma Brown,Consumer,United States,Los Angeles,Quebec,96908,North,ITM-980418,Furniture,Phones,Executive Desk,173.19,1,0.49,120.91
+490,ORD-136669,09/05/2021,01/10/2020,First Class,CID-31568,Robert Taylor,Corporate,United Kingdom,Chicago,Ontario,60297,West,ITM-449045,Furniture,Furnishings,Noise Cancelling Headphones,65.46,9,0.23,356.95
+491,ORD-138760,09/26/2020,01/02/2020,Same Day,CID-57856,Michael Smith,Corporate,United Kingdom,Chicago,Ontario,46652,South,ITM-603653,Office Supplies,Binders,Noise Cancelling Headphones,226.11,5,0.03,-153.58
+492,ORD-446138,10/04/2021,01/09/2020,Same Day,CID-36416,Alice Johnson,Consumer,Canada,Houston,California,47469,East,ITM-897525,Home Essentials,Phones,Laser Printer,166.63,3,0.22,-404.39
+493,ORD-236298,09/06/2020,01/05/2020,First Class,CID-22072,Michael Smith,Home Office,United States,London,Ontario,24768,South,ITM-340164,Home Essentials,Phones,Laser Printer,1354.98,6,0.41,-348.11
+494,ORD-977356,07/05/2021,01/11/2020,Same Day,CID-73408,Emma Brown,Corporate,Canada,London,British Columbia,21108,North,ITM-631673,Office Supplies,Chairs,Executive Desk,597.82,6,0.06,-493.11
+495,ORD-520644,08/26/2021,01/08/2020,Second Class,CID-61075,James Wilson,Corporate,United Kingdom,London,Texas,37802,West,ITM-564285,Furniture,Paper,Laser Printer,1119.82,9,0.17,-83.22
+496,ORD-873689,06/07/2021,01/10/2020,Same Day,CID-95729,Robert Taylor,Corporate,Canada,New York,New York,25499,West,ITM-714005,Furniture,Appliances,Laser Printer,1373.23,5,0.41,30.28
+497,ORD-756397,08/16/2020,01/04/2020,Same Day,CID-95965,Emma Brown,Home Office,United States,Los Angeles,Texas,55766,South,ITM-797959,Office Supplies,Storage,Wireless Keyboard,772.73,1,0.49,-8.46
+498,ORD-909740,06/21/2020,01/06/2020,Second Class,CID-30373,Olivia Davis,Consumer,Canada,Phoenix,Texas,75088,East,ITM-243038,Furniture,Paper,Noise Cancelling Headphones,1214.32,7,0.3,-280.6
+499,ORD-801693,09/23/2020,01/05/2020,Second Class,CID-13147,Michael Smith,Consumer,United States,Houston,California,40273,South,ITM-938918,Furniture,Phones,Wireless Keyboard,807.98,5,0.03,62.99
+500,ORD-947134,06/11/2020,01/05/2020,Same Day,CID-28945,Emma Brown,Home Office,United Kingdom,Toronto,California,51235,South,ITM-790084,Furniture,Furnishings,Executive Desk,592.84,8,0.41,-440.7
