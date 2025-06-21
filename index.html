@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Visualization Fundamentals: From Excel to Python</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --space-dark: #0B0D17;
+            --data-blue: #1E40AF;
+            --neon-cyan: #06B6D4;
+            --neon-emerald: #10B981;
+            --neon-orange: #F59E0B;
+            --chart-pink: #EC4899;
+            --text-light: #E6E6E6;
+            --glass-bg: rgba(255, 255, 255, 0.05);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: var(--space-dark);
+            color: var(--text-light);
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Animated Background */
+        .space-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(6, 182, 212, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(16, 185, 129, 0.4) 0%, transparent 50%),
+                radial-gradient(circle at 40% 80%, rgba(245, 158, 11, 0.2) 0%, transparent 50%);
+        }
+
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .star {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            animation: twinkle 3s infinite;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
+
+        .floating-shapes {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(1px);
+            animation: float 20s infinite linear;
+        }
+
+        @keyframes float {
+            from { transform: translateY(100vh) rotate(0deg); }
+            to { transform: translateY(-100px) rotate(360deg); }
+        }
+
+        .navbar {
+            background: rgba(11, 13, 23, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(6, 182, 212, 0.3);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 0 30px rgba(6, 182, 212, 0.2);
+        }
+
+        .nav-tabs {
+            display: flex;
+            gap: 2px;
+            background: linear-gradient(45deg, rgba(6, 182, 212, 0.2), rgba(16, 185, 129, 0.2));
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 25px rgba(6, 182, 212, 0.3);
+            position: relative;
+        }
+
+        .nav-tabs::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, var(--neon-cyan), var(--neon-emerald), var(--neon-orange), var(--neon-cyan));
+            border-radius: 12px;
+            z-index: -1;
+            animation: borderGlow 3s infinite;
+        }
+
+        @keyframes borderGlow {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+
+        .nav-tab {
+            padding: 1rem 2rem;
+            background: rgba(11, 13, 23, 0.9);
+            color: var(--text-light);
+            text-decoration: none;
+            font-family: 'Space Mono', monospace;
+            font-size: 1rem;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav-tab::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.5s;
+        }
+
+        .nav-tab:hover::before {
+            left: 100%;
+        }
+
+        .nav-tab:hover {
+            background: linear-gradient(45deg, rgba(6, 182, 212, 0.3), rgba(16, 185, 129, 0.3));
+            color: var(--neon-cyan);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(6, 182, 212, 0.4);
+        }
+
+        .nav-tab.active {
+            background: linear-gradient(45deg, rgba(6, 182, 212, 0.4), rgba(16, 185, 129, 0.4));
+            color: var(--neon-orange);
+            box-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            backdrop-filter: blur(15px);
+            background: linear-gradient(135deg, var(--glass-bg), rgba(255, 255, 255, 0.02));
+            border-radius: 20px;
+            box-shadow: 
+                0 0 40px rgba(6, 182, 212, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 20px;
+            padding: 2px;
+            background: linear-gradient(45deg, var(--neon-cyan), transparent, var(--neon-emerald), transparent, var(--neon-orange));
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask-composite: exclude;
+            animation: borderRotate 4s linear infinite;
+        }
+
+        @keyframes borderRotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        h1, h2 {
+            font-family: 'Space Mono', monospace;
+        }
+
+        h1 {
+            background: linear-gradient(45deg, var(--neon-cyan), var(--neon-emerald), var(--neon-orange));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            text-shadow: 0 0 20px rgba(6, 182, 212, 0.5);
+            position: relative;
+            text-align: center;
+            animation: textGlow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes textGlow {
+            from { filter: drop-shadow(0 0 10px rgba(6, 182, 212, 0.5)); }
+            to { filter: drop-shadow(0 0 20px rgba(16, 185, 129, 0.8)); }
+        }
+
+        h1::after {
+            content: '📊';
+            position: absolute;
+            margin-left: 15px;
+            animation: rotate 4s infinite linear;
+            font-size: 1.2em;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        h2 {
+            color: var(--neon-orange);
+            border-bottom: 3px solid;
+            border-image: linear-gradient(90deg, var(--neon-cyan), var(--neon-emerald)) 1;
+            padding-bottom: 0.5rem;
+            margin: 3rem 0 1.5rem 0;
+            font-size: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        h2::before {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--neon-cyan), var(--neon-emerald), var(--neon-orange));
+            transform: translateX(-100%);
+            animation: slideIn 1s ease-out forwards;
+        }
+
+        @keyframes slideIn {
+            to { transform: translateX(0); }
+        }
+
+        /* Hero Section */
+        .hero-section {
+            text-align: center;
+            margin: 3rem 0;
+            padding: 3rem 2rem;
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.1), rgba(16, 185, 129, 0.1));
+            border-radius: 20px;
+            border: 1px solid rgba(6, 182, 212, 0.2);
+        }
+
+        .hero-text {
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            display: block;
+            font-size: 3rem;
+            font-weight: bold;
+            background: linear-gradient(45deg, var(--neon-cyan), var(--neon-emerald));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            color: var(--neon-orange);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Course Details Tabs */
+        .course-details {
+            margin: 3rem 0;
+        }
+
+        .details-nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .detail-tab {
+            padding: 1rem 1.5rem;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+            border: 1px solid rgba(6, 182, 212, 0.3);
+            border-radius: 10px;
+            color: var(--text-light);
+            font-family: 'Space Mono', monospace;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .detail-tab::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.5s;
+        }
+
+        .detail-tab:hover::before {
+            left: 100%;
+        }
+
+        .detail-tab:hover {
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.2), rgba(16, 185, 129, 0.2));
+            border-color: var(--neon-cyan);
+            transform: translateY(-2px);
+        }
+
+        .detail-tab.active {
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.3), rgba(16, 185, 129, 0.3));
+            border-color: var(--neon-orange);
+            color: var(--neon-orange);
+            box-shadow: 0 0 15px rgba(245, 158, 11, 0.3);
+        }
+
+        .details-content {
+            background: linear-gradient(135deg, var(--glass-bg), rgba(255, 255, 255, 0.02));
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 2rem;
+            min-height: 300px;
+        }
+
+        .detail-panel {
+            display: none;
+            animation: fadeInUp 0.5s ease-out;
+        }
+
+        .detail-panel.active {
+            display: block;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .panel-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .panel-icon {
+            font-size: 2rem;
+            animation: float-icon 3s ease-in-out infinite;
+        }
+
+        .panel-header h3 {
+            margin: 0;
+            color: var(--neon-cyan);
+            font-size: 1.5rem;
+        }
+
+        /* Outcomes Grid */
+        .outcomes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .outcome-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(245, 158, 11, 0.1));
+            border-radius: 10px;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .outcome-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(16, 185, 129, 0.3);
+        }
+
+        .outcome-icon {
+            font-size: 1.5rem;
+        }
+
+        /* Audience Card */
+        .audience-card {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(6, 182, 212, 0.1));
+            border-radius: 15px;
+            border: 1px solid rgba(245, 158, 11, 0.3);
+        }
+
+        .audience-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .audience-card h4 {
+            color: var(--neon-orange);
+            font-size: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        /* Assessment Timeline */
+        .assessment-timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .assessment-item {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(6, 182, 212, 0.1));
+            border-radius: 12px;
+            border: 1px solid rgba(236, 72, 153, 0.3);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .assessment-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 5px 20px rgba(236, 72, 153, 0.2);
+        }
+
+        .assessment-icon {
+            font-size: 2rem;
+            flex-shrink: 0;
+        }
+
+        .assessment-content {
+            flex: 1;
+        }
+
+        .assessment-content h4 {
+            margin: 0 0 0.5rem 0;
+            color: var(--neon-cyan);
+        }
+
+        .assessment-content p {
+            margin: 0;
+            color: var(--text-light);
+        }
+
+        .assessment-weight {
+            background: linear-gradient(45deg, var(--neon-emerald), var(--chart-pink));
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        /* Syllabus Module Styling */
+        .syllabus-modules {
+            display: grid;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .module-item {
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.05), rgba(16, 185, 129, 0.05));
+            border: 1px solid rgba(6, 182, 212, 0.2);
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .module-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(6, 182, 212, 0.15);
+            border-color: var(--neon-cyan);
+        }
+
+        .module-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .module-number {
+            background: linear-gradient(45deg, var(--neon-cyan), var(--neon-emerald));
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .module-header h4 {
+            flex: 1;
+            margin: 0;
+            color: var(--neon-cyan);
+            font-size: 1.3rem;
+        }
+
+        .module-weeks {
+            background: rgba(245, 158, 11, 0.2);
+            color: var(--neon-orange);
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .module-topics {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .module-topics li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--text-light);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .module-topics li:last-child {
+            border-bottom: none;
+        }
+
+        .module-topics li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--neon-emerald);
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+
+        .module-topics li:hover {
+            color: var(--neon-cyan);
+            transform: translateX(5px);
+        }
+
+        /* Prerequisites Checklist */
+        .prereq-checklist {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .prereq-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: rgba(6, 182, 212, 0.05);
+            border-radius: 8px;
+            border-left: 3px solid var(--neon-orange);
+            transition: all 0.3s ease;
+        }
+
+        .prereq-item:hover {
+            background: rgba(6, 182, 212, 0.1);
+            transform: translateX(5px);
+        }
+
+        .prereq-check {
+            color: var(--neon-orange);
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        /* Instructor Cards */
+        .instructors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .instructor-card {
+            background: linear-gradient(135deg, var(--glass-bg), rgba(255, 255, 255, 0.02));
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 2rem;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .instructor-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+            transition: left 0.5s;
+        }
+
+        .instructor-card:hover::before {
+            left: 100%;
+        }
+
+        .instructor-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(6, 182, 212, 0.2);
+            border-color: var(--neon-cyan);
+        }
+
+        .instructor-avatar {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 1.5rem auto;
+            background: linear-gradient(45deg, var(--neon-cyan), var(--neon-emerald));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            animation: float-icon 3s ease-in-out infinite;
+        }
+
+        .avatar-icon {
+            font-size: 4rem;
+            filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+        }
+
+        .instructor-info h2 {
+            color: var(--neon-cyan);
+            margin: 0 0 0.5rem 0;
+            font-size: 1.8rem;
+            border: none;
+            padding: 0;
+        }
+
+        .instructor-info h2::before {
+            display: none;
+        }
+
+        .instructor-title {
+            background: linear-gradient(45deg, var(--neon-emerald), var(--chart-pink));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .instructor-affiliation {
+            color: var(--neon-orange);
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        .instructor-bio {
+            text-align: left;
+            margin: 1.5rem 0;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        .instructor-bio p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .instructor-specialties {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+
+        .specialty-tag {
+            background: linear-gradient(45deg, rgba(6, 182, 212, 0.2), rgba(16, 185, 129, 0.2));
+            border: 1px solid rgba(6, 182, 212, 0.4);
+            color: var(--neon-cyan);
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .specialty-tag:hover {
+            background: linear-gradient(45deg, rgba(6, 182, 212, 0.3), rgba(16, 185, 129, 0.3));
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(6, 182, 212, 0.2);
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .info-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 2rem;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .info-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+            transition: left 0.5s;
+        }
+
+        .info-card:hover::before {
+            left: 100%;
+        }
+
+        .info-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(6, 182, 212, 0.2);
+            border-color: var(--neon-cyan);
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+            text-align: center;
+            animation: float-icon 3s ease-in-out infinite;
+        }
+
+        @keyframes float-icon {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* Course Flow Visualization */
+        .course-flow {
+            margin: 3rem 0;
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.05), rgba(16, 185, 129, 0.05));
+            border-radius: 15px;
+            border: 1px solid rgba(6, 182, 212, 0.2);
+        }
+
+        .flow-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+            margin: 2rem 0;
+        }
+
+        .flow-node {
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.1), rgba(16, 185, 129, 0.1));
+            border: 2px solid rgba(6, 182, 212, 0.3);
+            border-radius: 15px;
+            padding: 1.5rem;
+            text-align: center;
+            min-width: 200px;
+            position: relative;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .flow-node:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 10px 30px rgba(6, 182, 212, 0.3);
+            border-color: var(--neon-emerald);
+        }
+
+        .flow-node::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, var(--neon-cyan), var(--neon-emerald), var(--neon-orange));
+            border-radius: 15px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .flow-node:hover::before {
+            opacity: 0.7;
+        }
+
+        .flow-arrow {
+            font-size: 2rem;
+            color: var(--neon-cyan);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.5; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
+
+        p, li {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            padding-left: 0;
+        }
+
+        li {
+            list-style: none;
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        li::before {
+            content: '▶';
+            position: absolute;
+            left: 0;
+            color: var(--neon-cyan);
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        li:hover {
+            color: var(--neon-cyan);
+            transform: translateX(5px);
+        }
+
+        li:hover::before {
+            color: var(--neon-emerald);
+            transform: scale(1.2);
+        }
+
+        strong {
+            background: linear-gradient(45deg, var(--neon-cyan), var(--neon-emerald));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 600;
+        }
+
+        .github-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            padding: 1.5rem 3rem;
+            background: linear-gradient(45deg, rgba(6, 182, 212, 0.1), rgba(16, 185, 129, 0.1));
+            border: 2px solid;
+            border-image: linear-gradient(45deg, var(--neon-cyan), var(--neon-emerald)) 1;
+            border-radius: 12px;
+            color: var(--neon-orange);
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: 600;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            margin-top: 2rem;
+        }
+
+        .github-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.5s;
+        }
+
+        .github-link:hover::before {
+            left: 100%;
+        }
+
+        .github-link:hover {
+            background: linear-gradient(45deg, rgba(6, 182, 212, 0.3), rgba(16, 185, 129, 0.3));
+            box-shadow: 0 0 30px rgba(6, 182, 212, 0.5);
+            transform: translateY(-3px) scale(1.05);
+        }
+
+        .content-section {
+            display: none;
+        }
+
+        .content-section.active {
+            display: block;
+            animation: slideUp 0.6s ease-out;
+        }
+
+        @keyframes slideUp {
+            from { 
+                opacity: 0; 
+                transform: translateY(30px);
+            }
+            to { 
+                opacity: 1; 
+                transform: translateY(0);
+            }
+        }
+
+        /* Contact Cards */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .contact-item {
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.1), rgba(16, 185, 129, 0.1));
+            border: 1px solid rgba(6, 182, 212, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(6, 182, 212, 0.3);
+        }
+
+        .contact-item a {
+            color: var(--neon-cyan);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-item a:hover {
+            color: var(--neon-orange);
+        }
+
+        /* References with cool styling */
+        .reference-item {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+            border-left: 4px solid var(--neon-cyan);
+            padding: 1rem 1.5rem;
+            margin: 1rem 0;
+            border-radius: 0 8px 8px 0;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .reference-item:hover {
+            border-left-color: var(--neon-emerald);
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.05), rgba(16, 185, 129, 0.05));
+            transform: translateX(10px);
+        }
+
+        @media (max-width: 768px) {
+            .nav-tabs {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .flow-container {
+                flex-direction: column;
+            }
+            
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .instructors-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .instructor-card {
+                min-width: unset;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="space-bg"></div>
+    <div class="stars"></div>
+    <div class="floating-shapes"></div>
+
+    <nav class="navbar">
+        <div class="nav-tabs">
+            <a href="#" class="nav-tab active" data-tab="home">🏠 Home</a>
+            <a href="#" class="nav-tab" data-tab="instructor">👨‍🏫 Instructors</a>
+            <a href="#" class="nav-tab" data-tab="resources">📚 Resources</a>
+            <a href="#" class="nav-tab" data-tab="contact">📞 Contact</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section id="home" class="content-section active">
+            <h1>Data Visualization Fundamentals: From Excel to Python</h1>
+            
+            <!-- Course Overview -->
+            <div class="hero-section">
+                <div class="hero-content">
+                    <p class="hero-text">Comprehensive online course covering data visualization from Excel basics to advanced Python libraries</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">10</span>
+                            <span class="stat-label">Weeks</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">4</span>
+                            <span class="stat-label">Modules</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">Online</span>
+                            <span class="stat-label">Format</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Journey Flow -->
+            <div class="course-flow">
+                <h2>📈 Learning Path</h2>
+                <div class="flow-container">
+                    <div class="flow-node">
+                        <div class="card-icon">📊</div>
+                        <strong>Excel Mastery</strong><br>
+                        Charts & Data Management
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-node">
+                        <div class="card-icon">🐍</div>
+                        <strong>Python Basics</strong><br>
+                        Programming Fundamentals
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-node">
+                        <div class="card-icon">📉</div>
+                        <strong>Python Viz</strong><br>
+                        Matplotlib & Seaborn
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-node">
+                        <div class="card-icon">🚀</div>
+                        <strong>Advanced</strong><br>
+                        Pandas & Plotly
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Course Details Tabs -->
+            <div class="course-details">
+                <div class="details-nav">
+                    <button class="detail-tab active" data-detail="overview">📖 Description</button>
+                    <button class="detail-tab" data-detail="outcomes">🎯 Objectives</button>
+                    <button class="detail-tab" data-detail="syllabus">📚 Syllabus</button>
+                    <button class="detail-tab" data-detail="audience">👥 Audience</button>
+                    <button class="detail-tab" data-detail="assessment">📊 Assessment</button>
+                    <button class="detail-tab" data-detail="prereq">⚡ Prerequisites</button>
+                </div>
+
+                <div class="details-content">
+                    <div class="detail-panel active" id="overview">
+                        <div class="panel-header">
+                            <span class="panel-icon">📖</span>
+                            <h3>Course Description</h3>
+                        </div>
+                        <p>This comprehensive online course introduces undergraduate students to the essential skills of data visualization, progressing from fundamental Excel techniques to advanced Python programming. Students will learn to transform raw data into compelling visual narratives that communicate insights effectively.</p>
+                        <p>The course begins with Excel fundamentals, covering data management, formatting, and creating various chart types from basic bar charts to sophisticated heat maps and geographic visualizations. Students then transition to Python programming, learning core concepts before diving deep into powerful visualization libraries like Matplotlib and Seaborn.</p>
+                        <p>By the course conclusion, students will master advanced tools including Pandas for data manipulation and Plotly for interactive visualizations. The hands-on approach ensures students gain practical experience with real-world datasets, developing both technical skills and design principles for effective data communication.</p>
+                        <p>This course prepares students for careers in data science, business analytics, research, and any field where data-driven decision making is critical. The skills learned here form the foundation for advanced data science coursework and professional data analysis work.</p>
+                    </div>
+
+                    <div class="detail-panel" id="outcomes">
+                        <div class="panel-header">
+                            <span class="panel-icon">🎯</span>
+                            <h3>Learning Objectives</h3>
+                        </div>
+                        <div class="outcomes-grid">
+                            <div class="outcome-item">
+                                <span class="outcome-icon">📊</span>
+                                <span>Master Excel data management, formatting, and advanced charting techniques</span>
+                            </div>
+                            <div class="outcome-item">
+                                <span class="outcome-icon">🐍</span>
+                                <span>Develop proficiency in Python programming fundamentals and data structures</span>
+                            </div>
+                            <div class="outcome-item">
+                                <span class="outcome-icon">📈</span>
+                                <span>Create compelling visualizations using Matplotlib and Seaborn libraries</span>
+                            </div>
+                            <div class="outcome-item">
+                                <span class="outcome-icon">🔢</span>
+                                <span>Manipulate and analyze data effectively using NumPy and Pandas</span>
+                            </div>
+                            <div class="outcome-item">
+                                <span class="outcome-icon">🎨</span>
+                                <span>Apply design principles for clear and impactful data communication</span>
+                            </div>
+                            <div class="outcome-item">
+                                <span class="outcome-icon">🚀</span>
+                                <span>Build interactive visualizations with Plotly and advanced techniques</span>
+                            </div>
+                            <div class="outcome-item">
+                                <span class="outcome-icon">📋</span>
+                                <span>Develop professional data visualization portfolios and reports</span>
+                            </div>
+                            <div class="outcome-item">
+                                <span class="outcome-icon">🔍</span>
+                                <span>Critically evaluate and improve existing data visualizations</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail-panel" id="syllabus">
+                        <div class="panel-header">
+                            <span class="panel-icon">📚</span>
+                            <h3>Course Syllabus</h3>
+                        </div>
+                        <div class="syllabus-modules">
+                            <div class="module-item">
+                                <div class="module-header">
+                                    <span class="module-number">1</span>
+                                    <h4>Excel Fundamentals</h4>
+                                    <span class="module-weeks">Weeks 1-2</span>
+                                </div>
+                                <ul class="module-topics">
+                                    <li>Data Management, Table Formatting, and Basic Excel Functions</li>
+                                    <li>Basic Excel Calculations and Working with Formulas</li>
+                                    <li>Introduction to Data Visualization and Excel Charting</li>
+                                    <li>Advanced Charts: Bubble, Box-and-Whisker, Waterfall, Funnel</li>
+                                    <li>Hierarchical Charts: Tree Maps, Sunburst, Radar Charts</li>
+                                    <li>Heat Maps and Geographic Visualizations</li>
+                                </ul>
+                            </div>
+                            <div class="module-item">
+                                <div class="module-header">
+                                    <span class="module-number">2</span>
+                                    <h4>Python Programming Fundamentals</h4>
+                                    <span class="module-weeks">Weeks 3-5</span>
+                                </div>
+                                <ul class="module-topics">
+                                    <li>Data Types: Numbers, Strings, Booleans, Lists, Dictionaries</li>
+                                    <li>Control Structures: Conditional Statements and Loops</li>
+                                    <li>Functions, Lambda Expressions, and Advanced Techniques</li>
+                                    <li>NumPy: Arrays, Indexing, and Mathematical Operations</li>
+                                    <li>Pandas: Series, DataFrames, Data Manipulation</li>
+                                    <li>Data Input/Output and Handling Missing Data</li>
+                                </ul>
+                            </div>
+                            <div class="module-item">
+                                <div class="module-header">
+                                    <span class="module-number">3</span>
+                                    <h4>Python Data Visualization</h4>
+                                    <span class="module-weeks">Weeks 6-8</span>
+                                </div>
+                                <ul class="module-topics">
+                                    <li>Matplotlib: Basic Plotting and Customization</li>
+                                    <li>Advanced Matplotlib: Subplots, Layouts, and Styling</li>
+                                    <li>Seaborn: Statistical Visualizations and Distribution Plots</li>
+                                    <li>Categorical Plots: Box, Violin, and Bar Plots</li>
+                                    <li>Matrix Plots: Heatmaps and Correlation Visualizations</li>
+                                    <li>Regression Plots and Advanced Seaborn Techniques</li>
+                                </ul>
+                            </div>
+                            <div class="module-item">
+                                <div class="module-header">
+                                    <span class="module-number">4</span>
+                                    <h4>Advanced Visualization Techniques</h4>
+                                    <span class="module-weeks">Weeks 9-10</span>
+                                </div>
+                                <ul class="module-topics">
+                                    <li>Built-in Pandas Visualization Capabilities</li>
+                                    <li>Plotly Express: Interactive Visualizations</li>
+                                    <li>SciPy: Statistical Analysis and Specialized Plots</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail-panel" id="audience">
+                        <div class="panel-header">
+                            <span class="panel-icon">👥</span>
+                            <h3>Target Audience</h3>
+                        </div>
+                        <div class="audience-card">
+                            <div class="audience-icon">🎓</div>
+                            <h4>Undergraduate Students</h4>
+                            <p>Designed for undergraduate students interested in data science, business analytics, research, and any field requiring effective data communication skills</p>
+                        </div>
+                    </div>
+
+                    <div class="detail-panel" id="assessment">
+                        <div class="panel-header">
+                            <span class="panel-icon">📊</span>
+                            <h3>Assessment Structure</h3>
+                        </div>
+                        <div class="assessment-timeline">
+                            <div class="assessment-item">
+                                <div class="assessment-icon">📋</div>
+                                <div class="assessment-content">
+                                    <h4>Weekly Assignments</h4>
+                                    <p>Hands-on exercises and visualization projects</p>
+                                    <span class="assessment-weight">50%</span>
+                                </div>
+                            </div>
+                            <div class="assessment-item">
+                                <div class="assessment-icon">📊</div>
+                                <div class="assessment-content">
+                                    <h4>Module Projects</h4>
+                                    <p>Four comprehensive projects (one per module)</p>
+                                    <span class="assessment-weight">30%</span>
+                                </div>
+                            </div>
+                            <div class="assessment-item">
+                                <div class="assessment-icon">🎯</div>
+                                <div class="assessment-content">
+                                    <h4>Final Portfolio</h4>
+                                    <p>Comprehensive data visualization portfolio</p>
+                                    <span class="assessment-weight">20%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail-panel" id="prereq">
+                        <div class="panel-header">
+                            <span class="panel-icon">⚡</span>
+                            <h3>Prerequisites</h3>
+                        </div>
+                        <div class="prereq-checklist">
+                            <div class="prereq-item">
+                                <span class="prereq-check">✓</span>
+                                <span>Basic computer literacy and familiarity with spreadsheet software</span>
+                            </div>
+                            <div class="prereq-item">
+                                <span class="prereq-check">✓</span>
+                                <span>High school level mathematics (algebra and basic statistics helpful)</span>
+                            </div>
+                            <div class="prereq-item">
+                                <span class="prereq-check">✓</span>
+                                <span>No prior programming experience required</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="instructor" class="content-section">
+            <h1>Course Instructors</h1>
+            <div class="instructors-grid">
+                <div class="instructor-card">
+                    <div class="instructor-avatar">
+                        <span class="avatar-icon">👨‍🎓</span>
+                    </div>
+                    <div class="instructor-info">
+                        <h2>Bahram Mobasher</h2>
+                        <div class="instructor-title">Distinguished Professor</div>
+                        <div class="instructor-affiliation">University of California, Riverside</div>
+                        <div class="instructor-bio">
+                            <p>Professor Mobasher is a distinguished faculty member at UCR with extensive research experience in observational cosmology, galaxy evolution, and astronomical instrumentation. His expertise spans multi-wavelength astronomy and large-scale survey data analysis.</p>
+                        </div>
+                        <div class="instructor-specialties">
+                            <span class="specialty-tag">Galaxy Evolution</span>
+                            <span class="specialty-tag">Observational Cosmology</span>
+                            <span class="specialty-tag">Multi-wavelength Astronomy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="instructor-card">
+                    <div class="instructor-avatar">
+                        <span class="avatar-icon">👨‍💻</span>
+                    </div>
+                    <div class="instructor-info">
+                        <h2>Saeed Rezaee</h2>
+                        <div class="instructor-title">Ph.D.</div>
+                        <div class="instructor-affiliation">University of California, Riverside</div>
+                        <div class="instructor-bio">
+                            <p>Dr. Rezaee brings expertise in computational astronomy and data analysis techniques. His research focuses on developing and implementing advanced algorithms for astronomical data processing and analysis.</p>
+                        </div>
+                        <div class="instructor-specialties">
+                            <span class="specialty-tag">Computational Astronomy</span>
+                            <span class="specialty-tag">Data Analysis</span>
+                            <span class="specialty-tag">Python Programming</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources" class="content-section">
+            <h1>Course Resources</h1>
+            
+            <div class="info-card" style="text-align: center; margin: 2rem 0;">
+                <span class="card-icon">💻</span>
+                <p style="font-size: 1.3rem; margin-bottom: 2rem;">All course materials, datasets, and code examples are available in our GitHub repository:</p>
+                <a href="https://github.com/srezaeeucr/data_visualization_course" class="github-link" target="_blank">
+                    🚀 Visit GitHub Repository
+                </a>
+            </div>
+
+            <div class="card-grid">
+                <div class="info-card">
+                    <span class="card-icon">📚</span>
+                    <h2>Learning Materials</h2>
+                    <ul>
+                        <li>Interactive Jupyter Notebooks</li>
+                        <li>Video Tutorials and Demonstrations</li>
+                        <li>Practice Datasets</li>
+                        <li>Code Templates and Examples</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <span class="card-icon">🛠️</span>
+                    <h2>Required Software</h2>
+                    <ul>
+                        <li>Microsoft Excel (or Google Sheets)</li>
+                        <li>Python 3.x with Anaconda</li>
+                        <li>Jupyter Notebook/Lab</li>
+                        <li>Required Python Libraries (provided)</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <span class="card-icon">📖</span>
+                    <h2>Recommended Reading</h2>
+                    <ul>
+                        <li>Python for Data Analysis by Wes McKinney</li>
+                        <li>Storytelling with Data by Cole Nussbaumer Knaflic</li>
+                        <li>The Visual Display of Quantitative Information by Edward Tufte</li>
+                        <li>Matplotlib Documentation and Tutorials</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section">
+            <h1>Contact Information</h1>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <span class="card-icon">📧</span>
+                    <h3>Email</h3>
+                    <a href="mailto:saeed.rezaee@ucr.edu">saeed.rezaee@ucr.edu</a>
+                </div>
+                <div class="contact-item">
+                    <span class="card-icon">💻</span>
+                    <h3>Online Office Hours</h3>
+                    <p>Tuesdays & Thursdays<br>2:00 PM - 4:00 PM</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Enhanced tab functionality
+        document.querySelectorAll('.nav-tab').forEach(tab => {
+            tab.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.content-section').forEach(s => s.classList.remove('active'));
+                this.classList.add('active');
+                const tabId = this.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+
+        // Course details tabs functionality
+        document.querySelectorAll('.detail-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                document.querySelectorAll('.detail-tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.detail-panel').forEach(p => p.classList.remove('active'));
+                this.classList.add('active');
+                const detailId = this.getAttribute('data-detail');
+                document.getElementById(detailId).classList.add('active');
+            });
+        });
+
+        // Create animated stars
+        function createStars() {
+            const starsContainer = document.querySelector('.stars');
+            const numStars = 100;
+            
+            for (let i = 0; i < numStars; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.width = Math.random() * 3 + 1 + 'px';
+                star.style.height = star.style.width;
+                star.style.animationDelay = Math.random() * 3 + 's';
+                starsContainer.appendChild(star);
+            }
+        }
+
+        // Create floating shapes
+        function createFloatingShapes() {
+            const shapesContainer = document.querySelector('.floating-shapes');
+            const colors = ['#06B6D4', '#10B981', '#F59E0B'];
+            
+            setInterval(() => {
+                const shape = document.createElement('div');
+                shape.className = 'shape';
+                shape.style.left = Math.random() * 100 + '%';
+                shape.style.width = Math.random() * 20 + 10 + 'px';
+                shape.style.height = shape.style.width;
+                shape.style.background = colors[Math.floor(Math.random() * colors.length)];
+                shape.style.opacity = Math.random() * 0.3 + 0.1;
+                shape.style.animationDuration = Math.random() * 15 + 10 + 's';
+                shapesContainer.appendChild(shape);
+                
+                // Remove shape after animation
+                setTimeout(() => {
+                    if (shape.parentNode) {
+                        shape.parentNode.removeChild(shape);
+                    }
+                }, 25000);
+            }, 2000);
+        }
+
+        // Parallax effect for container
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const rate = scrolled * -0.5;
+            document.querySelector('.space-bg').style.transform = `translateY(${rate}px)`;
+        });
+
+        // Initialize animations
+        createStars();
+        createFloatingShapes();
+
+        // Add hover effects to cards
+        document.querySelectorAll('.info-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.boxShadow = '0 20px 40px rgba(6, 182, 212, 0.3)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.boxShadow = '';
+            });
+        });
+
+        // Add click ripple effect
+        document.querySelectorAll('.nav-tab, .github-link, .info-card').forEach(element => {
+            element.addEventListener('click', function(e) {
+                const ripple = document.createElement('div');
+                const rect = this.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                const x = e.clientX - rect.left - size / 2;
+                const y = e.clientY - rect.top - size / 2;
+                
+                ripple.style.width = ripple.style.height = size + 'px';
+                ripple.style.left = x + 'px';
+                ripple.style.top = y + 'px';
+                ripple.style.position = 'absolute';
+                ripple.style.borderRadius = '50%';
+                ripple.style.background = 'rgba(255, 255, 255, 0.3)';
+                ripple.style.transform = 'scale(0)';
+                ripple.style.animation = 'ripple 0.6s linear';
+                ripple.style.pointerEvents = 'none';
+                
+                this.style.position = 'relative';
+                this.style.overflow = 'hidden';
+                this.appendChild(ripple);
+                
+                setTimeout(() => {
+                    ripple.remove();
+                }, 600);
+            });
+        });
+
+        // Add ripple animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes ripple {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
